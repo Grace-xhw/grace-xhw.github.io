@@ -1,9 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Blog</title>
+  <meta charset="UTF-8">
+  <title>DEARTREE</title>
+  <meta name="keywords" content="deartree,UI设计师">
+  <meta name="description" content="我叫Deartree，因为我想做一棵树，还需要很多关爱,所以这个名字就是我的人生理想了。我的职业是一名初长成的UI设计师，还在修炼中，请多指教。">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/vendors/jquery.easings.min.js"></script>
+  <script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
 </head>
+
 <body>
-  <p>Hello, I'm Grace.</p>
+  <ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">About Me</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Skills</a></li>
+    <li data-menuanchor="4thPage"><a href="#4thPage">Project</a></li>
+    <li data-menuanchor="5thPage"><a href="#5thPage">Contact Me</a></li>
+  </ul>
+  <div id="fullpage">
+    <div class="section">Home</div>
+    <div class="section">About Me</div>
+    <div class="section">Skills</div>
+    <div class="section" id='section4'>
+      <div class="slide" id="slide1">
+        <div class="list-img">
+            <h3 class="headsetOnly">webmobile-ui</h3>
+            <a href="/portfolio/21?css=1" onclick="return showPortfolioPost(21);" target="_blank" class="img">
+                <img src="http://needood.b0.upaiyun.com/ghost/2015-04-16/248608e659a16b496fdab065fb048f67.jpg" alt="好集友APP UI"><span class="">好集友APP UI</span>
+            </a>
+            <a href="/portfolio/20?css=1" onclick="return showPortfolioPost(20);" target="_blank" class="img">
+                <img src="http://needood.b0.upaiyun.com/ghost/2015-04-16/92f26084ed1cb04f5ec01ff987bf1513.jpg" alt="寄托天下wap版"><span class="animate">寄托天下wap版</span>
+            </a>
+            <a href="/portfolio/19?css=1" onclick="return showPortfolioPost(19);" target="_blank" class="img">
+                <img src="http://needood.b0.upaiyun.com/ghost/2015-04-16/290e5d80c11d130351aa81abc880547c.png" alt="科技汇网站设计"><span class="">科技汇网站设计</span>
+            </a>
+            <a href="/portfolio/18?css=1" onclick="return showPortfolioPost(18);" target="_blank" class="img">
+                <img src="http://needood.b0.upaiyun.com/ghost/2015-04-16/8f5c2ff4cd7c29cb0525fc8c36ae6cca.jpg" alt="九微官网"><span class="">九微官网</span>
+            </a>
+            <a href="/portfolio/17?css=1" onclick="return showPortfolioPost(17);" target="_blank" class="img">
+                <img src="http://needood.b0.upaiyun.com/ghost/2015-04-16/f0636455dd57cac3971e64ece86b5b8e.png" alt="专题页面①"><span class="">专题页面①</span>
+            </a>
+            <a href="/portfolio/16?css=1" onclick="return showPortfolioPost(16);" target="_blank" class="img">
+                <img src="http://needood.b0.upaiyun.com/ghost/2015-04-16/2981e982eb9f2ef1701afb2aa1ad7426.png" alt="专题页面②"><span class="">专题页面②</span>
+            </a>
+        </div>
+      </div>
+      <div class="slide" id="slide2"><h1>Side 2</h1></div>
+    </div>
+    <div class="section">Contact Me</div>
+  </div>
 </body>
 </html>
