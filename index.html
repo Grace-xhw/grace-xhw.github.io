@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Grace-xhw</title>
+  <link rel="image icon" href="img/myPhoto2.jpg">
   <meta name="keywords" content="前端 前端开发 web前端工程师">
   <meta name="description" content="我叫Grace，我的座右铭是'不要在该奋斗岁月里选择安逸'。一个偶然的瞬间，
   代码走进了我的视野，吸引着我一步步地摸索，执着而不乏味......">
   <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <script src="js/vendors/jquery.min.js"></script>
   <script src="js/vendors/jquery.easings.min.js"></script>
   <script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
@@ -22,16 +23,30 @@
 </head>
 
 <body>
-  <ul id="menu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">About Me</a></li>
-    <li data-menuanchor="3rdPage"><a href="#3rdPage">Skills</a></li>
-    <li data-menuanchor="4thPage"><a href="#4thPage">Project</a></li>
-    <li data-menuanchor="5thPage"><a href="#5thPage">Contact Me</a></li>
-  </ul>
+  <!-- <ul id="menu">
+    <li data-menuanchor="firstPage" class="active list list-1"><a href="#firstPage">Home</a></li>
+    <li data-menuanchor="secondPage" class="list list-2"><a href="#secondPage">About Me</a></li>
+    <li data-menuanchor="3rdPage" class="list list-3"><a href="#3rdPage">Skills</a></li>
+    <li data-menuanchor="4thPage" class="list list-4"><a href="#4thPage">Project</a></li>
+    <li data-menuanchor="5thPage" class="list list-5"><a href="#5thPage">Contact Me</a></li>
+  </ul> -->
+
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="active list list-1"><a href="#firstPage">Home
+    <span class="tooltip"><i class="fa fa-home fa-rotate-90"></i></span></a></li>
+    <li data-menuanchor="secondPage" class="list list-2"><a href="#secondPage">About Me
+    <span class="tooltip"><i class="fa fa-fw fa-user"></i></span></a></li>
+    <li data-menuanchor="3rdPage" class="list list-3"><a href="#3rdPage">Skills
+    <span class="tooltip"><i class="fa fa-fw fa-camera-retro fa-spin"></i></span></a></li>
+    <li data-menuanchor="4thPage" class="list list-4"><a href="#4thPage">Project
+    <span class="tooltip"><i class="fa fa-fw fa-briefcase"></i></span></a></li>
+    <li data-menuanchor="5thPage" class="list list-5"><a href="#5thPage">Contact Me
+    <span class="tooltip"><i class="fa fa-fw fa-envelope"></i></span></a></li>
+</ul> 
+
   <div id="fullpage">
     <div class="section">
-      <img id="myPhoto" src="img/myPhoto1.jpg">
+      <img id="avatar" src="img/myPhoto1.jpg">
       <h1 id="title">Hello, I'm Grace.</h1>
       <h2 id="subtitle">Web Front-End Developer</h2>
     </div>

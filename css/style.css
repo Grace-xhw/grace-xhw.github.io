@@ -1,12 +1,15 @@
-#menu li {
-  display:inline-block;
-  margin: 10px;
-  color: #000;
-  background:#fff;
-  background: rgba(255,255,255, 0.5);
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+#menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100px;
+  z-index: 70;
+  width: 100%;
+  padding: 0 10px 0 0;
+  margin: 0;
+  text-align: right;
 }
+
 #menu li.active{
   background:#666;
   background: rgba(0,0,0, 0.5);
@@ -24,7 +27,7 @@
 }
 #menu li a,
 #menu li.active a{
-  padding: 9px 18px;
+  padding: 9px 9px;
   display:block;
 }
 #menu li.active a{
@@ -37,19 +40,131 @@
   margin:0;
 }
 
-#menu{
-  position:fixed;
-  top:0;
-  right:0;
-  height: 100px;
-  z-index: 70;
-  width: 100%;
-  padding: 0;
-  margin:0;
-  text-align: right;
+.list
+{
+  display: inline-block;
+  margin: 10px;
+  color: #000;
+  background: rgba(255,255,255, 0.5);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 0.15em 0.05em 0;
+  position: relative;
+  z-index: 1;
+  -webkit-transition:color 0.2s;
+  transition:color 0.2s;
 }
 
-#myPhoto {
+.list:hover
+{
+  color: rgba(255,255,255,1);
+}
+
+.tooltip
+{
+  position: absolute;
+  z-index: 10;
+  width: 60px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  top: 100%;
+  left: 50%;
+  margin-left: -30px;
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 25px;
+  color: #67B38E;
+  opacity:0;
+  -webkit-transition:opacity 0.3s,-webkit-transform 0.3s;
+  transition:opacity 0.3s,transform 0.3s;
+}
+.tooltip i
+{
+  opacity: 0;
+  -webkit-transition:opacity 0.3s;
+  transition:opacity 0.3s;
+  z-index: 9999;
+}
+.tooltip:after
+{
+  display: block;
+  width: 30px;
+  height: 14px;
+  background: url(./../img/tooltip1.svg) no-repeat center center;
+  content: "";
+  position: absolute;
+  bottom: 93%;
+  left: 50%;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  margin-left: -15px;
+}
+
+.list-1 .tooltip
+{
+  -webkit-transform:translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+  transform:translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+  -webkit-transform-origin:50% 100%;
+  transform-origin:50% 100%;
+}
+.list-1 .tooltip i
+{
+  -webkit-transform:scale3d(0,0,1);
+  transform:scale3d(0,0,1);
+}
+.list-2 .tooltip
+{
+  -webkit-transform:translate3d(0,20px,0);
+  transform:translate3d(0,20px,0);
+}
+.list-2 .tooltip i
+{
+  -webkit-transform:translate3d(0,15px,0);
+  transform:translate3d(0,15px,0);
+}
+.list-3 .tooltip
+{
+  -webkit-transform:translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+  transform:translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+  -webkit-transform-origin:50% 100%;
+  transform-origin:50% 100%;
+}
+.list-3 .tooltip i
+{
+  -webkit-transform:scale3d(0,0,1);
+  transform:scale3d(0,0,1);
+}
+.list-4 .tooltip
+{
+  -webkit-transform:translate3d(0,-20px,0);
+  transform:translate3d(0,-20px,0);
+}
+.list-4 .tooltip i
+{
+  -webkit-transform:translate3d(0,20px,0);
+  transform:translate3d(0,20px,0);
+}
+.list-5 .tooltip
+{
+  -webkit-transform:scale3d(0,0,1);
+  transform:scale3d(0,0,1);
+}
+.list-5 .tooltip i
+{
+  -webkit-transform:scale3d(0,0,1);
+  transform:scale3d(0,0,1);
+}
+.list:hover .tooltip,
+.list:hover .tooltip i
+{
+  opacity: 1;
+  -webkit-transform:translate3d(0,0,0) rotate3d(1,1,1,0) scale3d(0,0,0);
+  transform:translate3d(0,0,0) rotate3d(1,1,1,0) scale3d(1,1,1);
+}
+
+#avatar {
   display: block;
   height: 256px;
   width: 256px;
@@ -74,6 +189,9 @@
   margin: 10px auto;
   text-shadow:2px 3px #F1F9F7,2px 3px #EBCEF8;
 }
+
+
+
 #section4 .slide .list-img {
   text-align: center;
 }
