@@ -5,7 +5,7 @@
   background:#fff;
   background: rgba(255,255,255, 0.5);
   -webkit-border-radius: 10px;
-            border-radius: 10px;
+  border-radius: 10px;
 }
 #menu li.active{
   background:#666;
@@ -30,18 +30,50 @@
 #menu li.active a{
   color: #fff;
 }
+
+#menu ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
 #menu{
   position:fixed;
   top:0;
-  left:0;
-  height: 40px;
+  right:0;
+  height: 100px;
   z-index: 70;
   width: 100%;
   padding: 0;
   margin:0;
+  text-align: right;
 }
 
-
+#myPhoto {
+  display: block;
+  height: 256px;
+  width: 256px;
+  margin: 30px auto;
+  border: 9px #F7BDEB solid;
+  border-radius: 50%;
+  box-shadow: 3px 3px 8px rgba(0, 115, 115, 0.6);
+}
+#title{
+  font-family: Arial;
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  margin: 10px auto;
+  text-shadow:5px 3px #22c3aa,5px 4px #aee2d9;
+}
+#subtitle{
+  font-family: Arial;
+  font-size: 30px;
+  color: #4C9B9B;
+  text-align: center;
+  margin: 10px auto;
+  text-shadow:2px 3px #F1F9F7,2px 3px #EBCEF8;
+}
 #section4 .slide .list-img {
   text-align: center;
 }
@@ -136,7 +168,7 @@
 
 
 .section{
-  background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
-  background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
-  background: linear-gradient(#4BBFC3,#7BAABE);
+  background: -webkit-gradient(linear, top left, bottom left, from(#FFCAFA), to(#24F7E7));
+  background: -webkit-linear-gradient(#FFCAFA, #24F7E7);
+  background: linear-gradient(#FFCAFA,#24F7E7);
 }
