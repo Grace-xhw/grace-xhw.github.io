@@ -3,7 +3,7 @@
   top: 0;
   right: 0;
   height: 100px;
-  z-index: 70;
+  z-index: 7;
   width: 100%;
   padding: 0 10px 0 0;
   margin: 0;
@@ -17,7 +17,7 @@
 }
 #menu li a{
   text-decoration:none;
-  color: #000;
+  color: #554FAB;
 }
 #menu li.active a:hover{
   color: #000;
@@ -49,6 +49,7 @@
   -webkit-border-radius: 10px;
   border-radius: 10px;
   font-weight: 700;
+  font-family:  "Josefin Slab",Arial,"Myriad Pro";
   padding: 0.15em 0.05em 0;
   position: relative;
   z-index: 1;
@@ -64,7 +65,7 @@
 .tooltip
 {
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   width: 60px;
   height: 30px;
   border-radius: 50%;
@@ -85,7 +86,9 @@
   opacity: 0;
   -webkit-transition:opacity 0.3s;
   transition:opacity 0.3s;
-  z-index: 9999;
+  z-index: 99;
+  position: relative;
+  top:10px;
 }
 .tooltip:after
 {
@@ -143,8 +146,8 @@
 }
 .list-4 .tooltip i
 {
-  -webkit-transform:translate3d(0,20px,0);
-  transform:translate3d(0,20px,0);
+  -webkit-transform:translate3d(0,-20px,0);
+  transform:translate3d(0,-20px,0);
 }
 .list-5 .tooltip
 {
@@ -169,17 +172,26 @@
   height: 256px;
   width: 256px;
   margin: 30px auto;
-  border: 9px #F7BDEB solid;
+  border: 5px #fff solid;
   border-radius: 50%;
   box-shadow: 3px 3px 8px rgba(0, 115, 115, 0.6);
 }
 #title{
   font-family: Arial;
-  font-size: 60px;
+  font-size: 65px;
   color: #fff;
   text-align: center;
   margin: 10px auto;
-  text-shadow:5px 3px #22c3aa,5px 4px #aee2d9;
+  text-shadow:3px 3px #22c3aa,5px 3px #aee2d9;
+}
+#add{
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4C9B9B;
+  text-align: center;
+  margin: 5px auto;
+ /* text-shadow:2px 2px #F1F9F7,2px 2px #EBCEF8;*/
 }
 #subtitle{
   font-family: Arial;
@@ -187,10 +199,87 @@
   color: #4C9B9B;
   text-align: center;
   margin: 10px auto;
-  text-shadow:2px 3px #F1F9F7,2px 3px #EBCEF8;
+  /*text-shadow:2px 3px #F1F9F7,2px 3px #EBCEF8;*/
 }
 
-
+#section2{
+  position: relative;
+}
+.about_me{
+  display: inline-block;
+  height: 30px;
+  width: 300px;
+  float: left;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Josefin Slab",Arial,"Myriad Pro";
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  letter-spacing: .15em;
+  cursor: pointer;
+}
+.pic img{
+  width: 360px;
+  height: 390px;
+  position: absolute;
+  left: 136px;
+  top: 120px;
+  border-radius: 25px;
+  border: 5px solid rgba(181, 255, 247, 0.8);
+  box-shadow: 6px 6px 5px rgba(208, 247, 247, 0.6);
+}
+.infor{
+ 
+  height: 205px;
+  margin: 5px auto;
+  padding:2px;
+  position: absolute;
+  top: 123px;
+  left: 520px;
+  color: rgb(109, 107, 140);
+  font-weight: 600;
+}
+.infor ul li {
+  list-style-type: none;
+  font-size: 18px
+}
+.infor ul li a{
+  text-decoration: none;
+  color: rgb(33, 122, 186);
+}
+.infor ul li a:hover{
+  color: yellow;
+  font-size: 1.1em;
+}
+.infor p{
+  font-size: 18px;
+  padding-left: 40px;
+  line-height: 1.5em;
+  color: rgb(109, 107, 140);
+}
+.skill{
+  position: absolute;
+  top: 123px;
+  right: 50px;
+  height: 205px;
+  margin: 5 auto;
+  padding:2px;
+}
+.skill p{
+  color: rgb(109, 107, 140);
+  font-weight: 600;
+  font-size: 18px;
+}
+.skill p span{
+  left: -21px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #0E6676;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
 
 #section4 .slide .list-img {
   text-align: center;
