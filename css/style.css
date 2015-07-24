@@ -1,3 +1,4 @@
+
 #menu{
   position: fixed;
   top: 0;
@@ -10,7 +11,7 @@
   text-align: right;
 }
 
-#menu li.active{
+#menu li .active{
   background:#666;
   background: rgba(0,0,0, 0.5);
   color: #fff;
@@ -191,7 +192,6 @@
   color: #4C9B9B;
   text-align: center;
   margin: 5px auto;
- /* text-shadow:2px 2px #F1F9F7,2px 2px #EBCEF8;*/
 }
 #subtitle{
   font-family: Arial;
@@ -199,14 +199,13 @@
   color: #4C9B9B;
   text-align: center;
   margin: 10px auto;
-  /*text-shadow:2px 3px #F1F9F7,2px 3px #EBCEF8;*/
 }
 
 #section2{
   position: relative;
 }
-.about_me{
-  display: inline-block;
+.about_me,.cont{
+  display: inline-block; 
   height: 30px;
   width: 300px;
   float: left;
@@ -224,7 +223,7 @@
   height: 390px;
   position: absolute;
   left: 136px;
-  top: 120px;
+  top: 140px;
   border-radius: 25px;
   border: 5px solid rgba(181, 255, 247, 0.8);
   box-shadow: 6px 6px 5px rgba(208, 247, 247, 0.6);
@@ -243,6 +242,11 @@
 .infor ul li {
   list-style-type: none;
   font-size: 18px
+}
+.infor li span{
+  display: inline-block;
+  text-align: right;
+  width: 70px;
 }
 .infor ul li a{
   text-decoration: none;
@@ -279,6 +283,43 @@
   border-radius: 50%;
   position: absolute;
   z-index: 1;
+}
+.icon{
+  width: 50%;
+  height: 258px;
+  margin: 50px auto;
+}
+.icon p{
+  font-family:  "Microsoft YaHei";
+  font-size: 35px;
+  color: rgb(210, 27, 207);
+  margin: 10px 150px;
+}
+.icon p a{
+  text-decoration: none;
+  color: #495EF0;
+}
+.icon li{
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  float: left;
+  list-style-type: none;
+}
+.icon li img{
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+ /* box-shadow: 2px 3px 5px rgba(122, 131, 221,.8);*/
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.3s;
+}
+.icon li a:hover img{
+  -webkit-transform:rotate(360deg) scale3d(.8,.8,.8);
+  transform:rotate(360deg) scale3d(.8,.8,.8);
+  -webkit-transform-origin:50% 50%;
+  transform-origin:50% 50%;
 }
 
 #section4 .slide .list-img {
