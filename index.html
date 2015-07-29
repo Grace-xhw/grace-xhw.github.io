@@ -1,127 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+  <title></title>
   <meta charset="UTF-8">
   <title>Grace-xhw</title>
-  <link rel="image icon" href="img/myPhoto2.JPG">
+  <!-- <link rel="image icon" href="img/myPhoto2.JPG"> -->
   <meta name="keywords" content="前端 前端开发 web前端工程师">
   <meta name="description" content="我叫Grace，我的座右铭是'不要在该奋斗的岁月里选择安逸'。一个偶然的瞬间，
   代码走进了我的视野，吸引着我一步步地摸索，执着而充满激情......">
   <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-  <script src="js/vendors/jquery.min.js"></script>
-  <script src="js/vendors/jquery.easings.min.js"></script>
-  <script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
-  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-
-  <script src="js/app.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel=stylesheet href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
 
 </head>
 <body>
-<ul id="menu">
-    <li data-menuanchor="firstPage" class="active list list-1"><a href="#firstPage">Home
-    <span class="tooltip"><i class="fa fa-home fa-2x fa-rotate-90"></i></span></a></li>
-    <li data-menuanchor="secondPage" class="list list-2"><a href="#secondPage">About Me
-    <span class="tooltip"><i class="fa fa-fw fa-2x fa-user"></i></span></a></li>
-    <li data-menuanchor="3rdPage" class="list list-3"><a href="#3rdPage">skills
-    <span class="tooltip"><i class="fa fa-fw fa-2x fa-laptop"></i></span></a></li>
-    <li data-menuanchor="4thPage" class="list list-4"><a href="#4thPage">Projects
-    <span class="tooltip"><i class="fa fa-fw fa-2x fa-briefcase"></i></span></a></li>
-    <li data-menuanchor="5thPage" class="list list-5"><a href="#5thPage">Contact Me
-    <span class="tooltip"><i class="fa fa-fw fa-2x fa-phone"></i></span></a></li>
-</ul> 
+  <div class="ct" id="t1">
+    <div class="ct" id="t2">
+      <div class="ct" id="t3">
+        <div class="ct" id="t4">
+          <section>
+            <div class="show-menu">
+              <div class="parent2">
+                <div class="test1"><a href="#t1"><i class="fa fa-user fa-2x menu-icon"></a></i>
+              </div>
+              <div class="test2"><a href="#t2"><i class="fa fa-laptop fa-2x menu-icon"></i></a></div>
+              <div class="test3"><a href="#t3"><i class="fa fa-briefcase fa-2x menu-icon"></i></a></div>
+              <div class="test4"><a href="#t4"><i class="fa fa-phone fa-2x menu-icon"></a></i></div>
+              <div class="mask2"><i class="fa fa-bars fa-2x"></i></div>
+              </div>
+            </div>
+            <ul class="menu-list">
+              <a href="#t1">
+                <li class="menu" id="uno">
+                  <span>Home</span>
+                </li>
+              </a>
+              <a href="#t2">
+                <li class="menu" id="dos"><span>Skills</span></li>
+              </a>
+              <a href="#t3">
+                <li class="menu" id="tres"><span>Projects</span></li>
+              </a>
+              <a href="#t4">
+                <li class="menu" id="cuatro"><span>Contact Me</span></li>
+              </a>
 
-  <div id="fullpage">
-    <div class="section">
-      <img id="avatar" src="img/myPhoto1.JPG">
-      <h1 id="title">Hello, I'm Grace.</h1>
-      <p id="add">A Diligent,Passionate,and Earnest</p>
-      <h2 id="subtitle">Web Front-End Developer</h2>
-    </div>
-    <div class="section" id="section2">
-        <div class="about_me"><a href="#">ABOUT ME</a></div>
-        <div class="pic"><img src="img/photo3.jpg"></div>
-        <div class="infor">
-          <ul>
-            <li><span>姓名</span> | 王晓华--Grace</li>
-            <li><span>学历</span> | 本科</li>
-            <li><span>学校</span> | 韩山师范学院</li>
-            <li><span>手机</span> | 15766915341</li>
-            <li><span>邮箱</span> | 1665334629@qq.com</li>
-            <li><span>现居</span> | 广东-广州</li>
-            <li><span>Github</span> | <a href="github.com/Grace-xhw">点击访问</a></li>
-          </ul>
-
-          <p>我是一个酷爱学习，勤奋上进，稳重中又充满激情的女孩子。<br />
-          我的motto是：不要在该奋斗的年龄而选择了安逸.<br />
-          我的梦想是成为一名资深的前端攻城狮，就像幕课网上的老师，把<br />
-          技术分享给酷爱学习的小伙伴，让更多人的指尖迸发出力量。<br />
-          当然，那还很远，我现在还在起步阶段，还请前辈们多多指教！<br />
-          <br />
-          半年的前端开发经验，熟悉掌握HTML(5)、CSS(3)、Javascript；<br />
-          懂得使用jQuery、Bootstrap以及less框架，能熟练开发符合W3C<br />
-          标准的页面，懂得响应式设计；
-          懂得使用Git,目前正在学习Ajax.
-          </p>
-        </div>
-        <div class="skill">
-          <p>技能：<br />
-          <span></span> HTML(5)、CSS(3)、Javascript、jQuery、<br />
-          Bootstrap、less;<br />
-          <span></span>Photoshop、会声会影、及其它视/音频编辑软件；<br />
-          <span></span>Word、Excel、PowerPoint;<br />
-          <span></span>英语八级；<br />
-          <span></span>普通话二甲；<br />
-          </p>
-        </div>
-    </div>
-    <div class="section">Skills</div>
-    <div class="section" id='section4'>
-      <div class="slide" id="slide1">
-        <div class="list-img">
-            <h3 class="headsetOnly">webmobile-ui</h3>
-            <a href="/portfolio/21?css=1" onclick="return showPortfolioPost(21);" target="_blank" class="img">
-                <img src="http://needood.b0.upaiyun.com/ghost/2015-04-16/248608e659a16b496fdab065fb048f67.jpg" alt="好集友APP UI"><span class="">好集友APP UI</span>
-            </a>
-            <a href="/portfolio/20?css=1" onclick="return showPortfolioPost(20);" target="_blank" class="img">
-                <img src="http://needood.b0.upaiyun.com/ghost/2015-04-16/92f26084ed1cb04f5ec01ff987bf1513.jpg" alt="寄托天下wap版"><span class="animate">寄托天下wap版</span>
-            </a>
-            <a href="/portfolio/19?css=1" onclick="return showPortfolioPost(19);" target="_blank" class="img">
-                <img src="http://needood.b0.upaiyun.com/ghost/2015-04-16/290e5d80c11d130351aa81abc880547c.png" alt="科技汇网站设计"><span class="">科技汇网站设计</span>
-            </a>
-            <a href="/portfolio/18?css=1" onclick="return showPortfolioPost(18);" target="_blank" class="img">
-                <img src="http://needood.b0.upaiyun.com/ghost/2015-04-16/8f5c2ff4cd7c29cb0525fc8c36ae6cca.jpg" alt="九微官网"><span class="">九微官网</span>
-            </a>
-            <a href="/portfolio/17?css=1" onclick="return showPortfolioPost(17);" target="_blank" class="img">
-                <img src="http://needood.b0.upaiyun.com/ghost/2015-04-16/f0636455dd57cac3971e64ece86b5b8e.png" alt="专题页面①"><span class="">专题页面①</span>
-            </a>
-            <a href="/portfolio/16?css=1" onclick="return showPortfolioPost(16);" target="_blank" class="img">
-                <img src="http://needood.b0.upaiyun.com/ghost/2015-04-16/2981e982eb9f2ef1701afb2aa1ad7426.png" alt="专题页面②"><span class="">专题页面②</span>
-            </a>
+            </ul>
+            <div class="page" id="p1">
+              <img id="avatar" src="img/myPhoto1.JPG">
+              <h1 id="title">Hello, I'm Grace.</h1>
+              <p id="add">A Diligent,Passionate,and Earnest</p>
+              <h2 id="subtitle">Web Front-End Developer</h2>
+            </div>
+            <div class="page" id="p2">
+              <li class="icon fa fa-fw fa-2x fa-laptop"><span class="title">Skills</span></li >
+            </div>
+            <div class="page" id="p3">
+              <li class="icon fa fa-fw fa-2x fa-briefcase"><span class="title">Projects</span></li>
+            </div>
+            <div class="page" id="p4">
+              <ul class="contact-icon">
+                <li><a href="#" title="grace_xhw"><img src="img/weixin.jpg"></a></li>
+                <li><a target="_blank" href="tencent://message/?uin=1665334629&Site=&menu=yes"><img src="img/QQ.jpg"></a></li>
+                <li><a href="tel://15766915341"><img src="img/phone.png"></a></li>
+                <li><a href="mailto:1665334629@qq.com"><img src="img/mail2.png"></a></li>
+                <li><a href="https://github.com/grace-xhw"><img src="img/git.jpg"></a></li>
+              </ul>
+            </div>
+          </section>
         </div>
       </div>
-      <div class="slide" id="slide2"><h1>Side 2</h1></div>
-    </div>
-    <div class="section">
-      <div class="cont"><a href="#">CONTECT ME</a></div>
-        <div class="icon">
-          <p>快把我收到碗里吧<br />
-            <a href="mailto:2220543817@qq.com" hidefocus="true">2220543817@qq.com</a>
-          </p>
-          <ul>
-            <li><a href="#"><img src="img/weixin.jpg"></a></li>
-            <li><a href="#"><img src="img/QQ.jpg"></a></li>
-            <li><a href="#"><img src="img/phone.png"></a></li>
-            <li><a href="#"><img src="img/mail2.png"></a></li>
-            <li><a href="#"><img src="img/git.jpg"></a></li>
-          </ul>
-        </div>
     </div>
   </div>
 </body>
 </html>
-
