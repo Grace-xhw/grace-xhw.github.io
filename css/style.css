@@ -52,18 +52,30 @@ ul.menu-list {
 
 #t1:target .page#p1 {
     transform: translateX(0);
+    -ms-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -webkit-transform:-o-transform translateX(0);
 }
 
 #t2:target .page#p2 {
-    transform: translateX(-90%);
+    transform: translateX(90%);
+    -ms-transform: translateX(90%);
+    -moz-transform: translateX(90%);
+    -webkit-transform:-o-transform translateX(90%);
 }
 
 #t3:target .page#p3 {
-    transform: translateX(-190%);
+    transform: translateX(190%);
+    -ms-transform: translateX(190%);
+    -moz-transform: translateX(190%);
+    -webkit-transform:-o-transform translateX(190%);
 }
 
 #t4:target .page#p4 {
     transform: translateX(-290%);
+    -ms-transform: translateX(-290%);
+    -moz-transform: translateX(-290%);
+    -webkit-transform:-o-transform translateX(-290%);
 }
 
 #t2:target .page#p1,
