@@ -1,0 +1,115 @@
+/* for nexus 4 and iphone landscape */
+/* the Google nexus Galaxy width 365px */
+/* the Google nexus  4 width 400px */
+@media screen and (min-width: 321px) and (max-width: 480px)  {
+
+  #avatar {
+    width: 50%;
+  }
+  .page .icon {
+    right: 0;
+  }
+
+  .contact-icon li{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  .contact-icon li img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* Mobile Portrait Size to Mobile Portrait Size (devices and browsers) */
+@media screen and (max-width: 320px) and (orientation:portrait) {
+
+}
+
+
+/* for nexus 4 and iphone landscape */
+/* the Google nexus Galaxy width 365px */
+/* the Google nexus  4 width 400px */
+@media screen and (min-width: 321px) and (max-width: 480px)  {
+}
+
+
+@media screen and (max-width: 480px) and (orientation:portrait){
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  /*Make dropdown links appear inline*/
+  ul.menu-list {
+    position: static;
+    display: none;
+  }
+  /*Create vertical spacing*/
+  li {
+    margin-bottom: 1px;
+  }
+  /*Make all menu links full width*/
+  ul.menu-list li, li a {
+    width: 100%;
+  }
+  /*Display 'show menu' link*/
+  .show-menu {
+    display:block;
+  }
+
+  #t1:target .page#p1 {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+  }
+
+  #t2:target .page#p2 {
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+  }
+
+  #t3:target .page#p3 {
+      transform: translateX(-200%);
+      -webkit-transform: translateX(-200%);
+  }
+
+  #t4:target .page#p4 {
+      transform: translateX(-300%);
+      -webkit-transform: translateX(-300%);
+  }
+
+  .page .icon {
+    right: 0;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* set the nexus 7 width for 616px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 960px) and (max-width: 1124px) {
+}
