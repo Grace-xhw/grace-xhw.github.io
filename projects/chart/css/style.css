@@ -1,0 +1,269 @@
+html,body{
+	margin:0;
+	padding: 0;
+	outline: none;
+	height: 100%;
+	min-width:1005px;
+}
+body{
+	background: #fff;
+	color: #5a5a5a;
+	font: 12px Arial,Helvetica,sans-serif;
+}
+ul, ol{
+	list-style-type: none;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+.cGray{
+	background: #f5f5f5;
+}
+.text,.textarea,.pwd{
+	height: 18px;
+  	border: 2px solid #ededed;
+  	border-radius: 3px;
+  	font-family: Arial,Helvetica,sans-serif;
+  	font-size: 13px;
+  	color: #5a5a5a;
+}
+.header{
+	width: 100%;
+	min-width: 1005px;
+	height: 110px;
+}
+.center{
+	width: 1005px;
+	height: auto;
+	margin:0 auto;
+}
+.header_top{
+	height: 32px;
+	background: #455467;
+	border-bottom: 1px solid #727e8c;
+}
+.header_top_tit{
+	width: 127px;
+}
+.header_top_tit img{
+	width: 127px;
+	height: 32px;
+}
+.navBar{
+	width: 420px;
+	height: 32px;
+	margin-top: 0; 
+}
+.home_link,.msg_link,.help_link{
+	list-style-type: none;
+	padding-right: 14px;
+	background: url(./../i/header-sprites.png) 100% -90px no-repeat;
+}
+.web_link{
+	list-style-type: none;
+	padding-right: 14px;
+	background: url(./../i/header-sprites.png) 100% -210px no-repeat;
+}
+.navBar li a{
+	color: #f5f5f5;;
+	line-height: 26px;
+	padding-top: 2px;
+	display: inline-block;
+	text-decoration: none;
+}
+.navBar li a:hover{
+	text-decoration: underline;
+}
+.navBar .home_link a{
+	padding-left: 22px;
+	background: url(./../i/header-sprites.png) 0 -120px no-repeat;
+}
+.navBar .msg_link a{
+	padding-left: 23px;
+	background: url(./../i/header-sprites.png) 0 -150px no-repeat;
+}
+.navBar .help_link a{
+	padding-left: 23px;
+	background: url(./../i/header-sprites.png) 0 -180px no-repeat;
+}
+.navBar .web_link a{
+	color: #5fa8e4;
+}
+.navBar .web_link a{
+	background: url(./../i/header-sprites.png) 0 -390px no-repeat;
+}
+.header_bottom{
+	height: 65px;
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	box-shadow:  0px 10px 10px -6px rgba(0,0,0,0.25);
+}
+h2{
+	background: url(../i/praxair-logo.png) no-repeat;
+	width: 208px;
+	height: 50px;
+	overflow: hidden;
+}
+.baner{
+	height: 75px;
+	margin-top: -75px;
+	margin-right: 40px;
+}
+.baner li{
+	height: 20px;
+	line-height:20px;
+	list-style-type: none;
+}
+.baner li a{
+	margin-top: 0;
+	background: url(./../i/header-sprites.png) 0 -242px no-repeat;
+	text-decoration: none;
+	padding-left: 20px;
+	color: #878787;
+}
+.baner li a:hover{
+	text-decoration: underline;
+}
+#Espana{
+	background-position: 0 -272px;
+}
+#France{
+	background-position: 0 -302px;
+}
+.main{
+	width: 1005px;
+	margin:0 auto;
+	padding: 20px 0 40px 0;
+}
+.col_left{
+	width: 300px;
+	margin: -10px;
+}
+h3{
+	font-size: 21px;
+  	color: #242424;
+  	font-weight: normal;
+  	line-height: 50px;
+  	border-bottom: 1px solid #e1e1e1;
+  	margin:20px;
+}
+fieldset{
+	margin:0 10px;
+	border: none;
+}
+fieldset label{
+	font-size: 13px;
+}
+input:focus{
+	outline: none;
+}
+#uName,#pwd{
+	width: 234px;
+	height: 26px;
+	margin:5px auto 10px auto;
+}
+.blueBtn,.blueBtn:link,.blueBtn:visited{
+	display: inline-block;
+	height: 35px;
+	font-size: 14px;
+	line-height: 34px;
+	padding:0 58px 0 23px;
+	margin-bottom: 15px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	background: #5fa8e4 url(./../i/blue-btn-arrow.jpg) 100% 0 no-repeat;
+}
+.blueBtn:hover{
+	background: #4c95dd url(../i/blue-btn-arrow.jpg) 100% -35px no-repeat;
+}
+.register{
+	width: 300px;
+	height: 145px;
+	margin-bottom: 100px;
+}
+#reg_tip{
+	margin-left: 20px;
+	margin-top: -10px;
+}
+.reg_btn{
+	margin-right: 20px;
+}
+.col_right{
+	width: 665px;
+	margin: 20px;
+	height: auto;
+}
+.col_right h1{
+	width: 665px;
+	line-height: 30px;
+	font-size: 21px;
+	padding: 6px 0 4px 0;
+	font-weight: normal;
+	margin-top: -10px;
+    margin-bottom: -10px;
+}
+.col_right p{
+	line-height: 20px;
+	font-size: 13px;
+}
+.col_right a{
+	color: #00b760;
+}
+.col_right h1 a{
+	text-decoration: none;
+}
+.col_right h1 a:hover{
+	text-decoration: underline;
+}
+.col_right p a:hover{
+	text-decoration: none;
+}
+#reg_sec{
+	margin-bottom: 50px;
+}
+.footer{
+	height: 120px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.link{
+	width: 100%;
+	height: 90px;
+	background: #455467;
+}
+.list li{
+	height: 25px;
+}
+.list li a{
+	color: #fff;
+	font-size: 12px;
+	line-height: 16px;
+}
+.list li a:hover{
+	text-decoration: none;
+}
+.list_f{
+	margin-left: -30px;
+}
+.list_s,.list_t{
+	margin-right: 30px;
+}
+.copyright{
+	padding: 0;
+	height: 30px;
+	width: 100%;
+	margin: 0 auto;
+	background: #333f4d;
+}
+.copyright p{
+	margin: 0;
+	padding: 6px 0 0 10px;
+	color: #fff;
+}
+.clearfix {
+	clear: both;
+}
