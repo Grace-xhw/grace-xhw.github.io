@@ -35,7 +35,19 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 /* Mobile Portrait Size to Mobile Portrait Size (devices and browsers) */
 @media screen and (max-width: 320px) and (orientation:portrait) {
+  .contact-icon {
+    padding: 10px;
+  }
 
+  .contact-icon li{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  .contact-icon li img{
+    width: 40px;
+    height: 40px;
+  }
 }
 
 
@@ -107,7 +119,39 @@ only screen and (min-device-pixel-ratio: 1.5) {
   .page .icon {
     right: 0;
   }
+
+  .container {
+    width: 100%;
+    overflow-y: scroll;
+    margin: 0;
+  }
+  .face {
+    position: absolute;
+    width: 100%;
+  }
+
+  .container:first-child{
+    margin-top: 5px;
+  }
+  .container .card {
+    margin: 0;
+    width: 97%;
+  }
+  .card .flip-img{
+    width: 100%;
+  }
+
+  a:hover.tooltips span {
+    bottom: 50px;
+    left: 0;
+  }
+
+  .card:first-child p{
+    font-size: 15px;
+    text-indent: 45px;
+  }
 }
+
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /* set the nexus 7 width for 616px */
