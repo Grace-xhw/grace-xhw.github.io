@@ -64,6 +64,9 @@ only screen and (min-device-pixel-ratio: 1.5) {
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   /*Make dropdown links appear inline*/
+  #avatar {
+    margin: 35px auto;
+  }
   ul.menu-list {
     position: static;
     display: none;

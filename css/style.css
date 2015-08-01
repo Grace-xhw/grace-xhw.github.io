@@ -36,12 +36,12 @@ section {
 
 #p2 {
     left: 100%;
-    background: #FF5722;
+    background: #fff;
 }
 
 #p3 {
     left: 200%;
-    background: #8285E0;
+    background: #FF5722;
 }
 
 #p4 {
@@ -239,7 +239,7 @@ li.menu span {
 #avatar {
   display: block;
   width: 20%;
-  margin: 30px auto;
+  margin: 100px auto;
   border: 5px #fff solid;
   border-radius: 50%;
 }
@@ -393,11 +393,11 @@ body {
 }
 
 #t2:target .mask2 {
-  background: #FF5722;
+  background: #8285E0;
 }
 
 #t3:target .mask2 {
-  background: #8285E0;
+  background: #FF5722;
 }
 
 #t4:target .mask2 {
@@ -447,4 +447,87 @@ body {
   transform:rotate(360deg) scale3d(.8,.8,.8);
   -webkit-transform-origin:50% 50%;
   transform-origin:50% 50%;
+}
+
+
+#skill_clound{
+  height: 100%;
+}
+
+
+.container{
+  width:90%;
+  height:100%;
+  position: relative;
+  margin: 45px 35px;
+}
+
+.card{
+  text-align:center;
+  width: 320px;
+  height: 250px;
+  display: inline-block;
+}
+
+.face {
+  position: absolute;
+  width: 320px;
+  height: 250px;
+}
+.face.front{background:#000;}
+
+.face.back {
+  display: block;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  background-color: #333;
+}
+
+.container{
+  perspective: 800px;
+  -webkit-perspective: 800px;
+}
+.card{
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: all 1.0s linear;
+  -webkit-transition: all 1.0s linear;
+  margin: 20px;
+}
+.card:hover {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.face {
+  backface-visibility: hidden;
+}
+
+.face.back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.card a.btn.btn-block{
+  display:block;
+}
+.card a.btn.btn-outline{
+  background:transparent;
+  border:1px solid #fff;
+  border-radius:3px;
+  padding:10px;
+  color:#fff;
+  text-align:center;
+  text-decoration:none;
+}
+.card a.btn.btn-outline:hover{
+  background:#222;
+  border:1px solid transparent;
+}
+
+.card .flip-img{
+  width: 320px;
+  height: 250px;
 }
