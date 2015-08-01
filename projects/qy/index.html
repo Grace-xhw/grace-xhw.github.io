@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" /> 
+  <title>
+      装修计划--装修助手--经装修
+    </title> 
+  <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/carousel.css" /> 
+  <script src="js/jquery-2.1.4.min.js">
+    </script> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" /> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script> 
+  <script type="text/javascript" src="js/carousel.js">
+    </script> 
+  <script type="text/javascript" src="js/homepage.js">
+    </script> 
+ </head> 
+ <body> 
+  <div class="wrap"> 
+   <!-- header 开始 --> 
+   <div class="header"> 
+    <div class="header_center"> 
+     <div class="logo"> 
+      <img src="images/logo.png" /> 
+     </div> 
+     <div class="nav"> 
+      <ul> 
+       <li> <a class="list" href="#"> 目的地 </a> </li> 
+       <li> <a class="list" href="#"> 锦囊 </a> </li> 
+       <li> <a class="list" href="#"> 论坛 </a> </li> 
+       <li> <a class="list" href="#"> 问答 </a> </li> 
+       <li> <a class="list" href="#"> 折扣 </a> </li> 
+       <li> <a class="list" href="#"> 行程助手 </a> </li> 
+       <li> <a class="list" href="#"> 预订 </a> </li> 
+      </ul> 
+     </div> 
+     <div class="login"> 
+      <ul class="login_entry"> 
+       <li class="login_entry_tit"> <a href="javascript:;"> 登录 </a> | <a href="register.html"> 注册 </a> </li> 
+       <li> <a href="javascript:;"> <img src="images/connect_logo_qq.png" width="16" height="16" alt="使用QQ账号登录" title="使用QQ账号登录" /> </a> </li> 
+       <li> <a href="javascript:;"> <img src="images/head_weibo.png" width="16" height="16" alt="使用微博账号登录" title="使用微博账号登录" /> </a> </li> 
+      </ul> 
+     </div> 
+     <div class="search"> 
+      <form> 
+       <input class="search_input" action="" name="wd" method="get" target="_blank" autocomplete="off" type="text" value="" placeholder="搜索" /> 
+       <input class="search_btn" value="搜索" type="sumbit" /> 
+      </form> 
+     </div> 
+    </div> 
+   </div> 
+   <!-- header 结束 --> 
+   <div class="main"> 
+    <div class="main_center"> 
+     <div class="ind_slogan"> 
+      <p> 专注出境旅行 - 大家帮助大家, 共同探索美好世界 </p> 
+     </div> 
+     <div class="main_center_left"> 
+      <!-- carousel开始 --> 
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+       <!-- Indicators --> 
+       <ol class="carousel-indicators"> 
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"> </li> 
+        <li data-target="#carousel-example-generic" data-slide-to="1"> </li> 
+        <li data-target="#carousel-example-generic" data-slide-to="2"> </li> 
+       </ol> 
+       <!-- Wrapper for slides --> 
+       <div class="carousel-inner" role="listbox"> 
+        <div class="item active"> 
+         <img src="images/91d4df5f767aba13e40321085e9262a5.jpg" /> 
+         <div class="carousel-caption"> 
+          <h1> Slide1 </h1> 
+         </div> 
+        </div> 
+        <div class="item"> 
+         <img src="images/91d4df5f767aba13e40321085e9262a5.jpg" width="680" height="360" /> 
+         <div class="carousel-caption"> 
+          <h1> Slide2 </h1> 
+         </div> 
+        </div> 
+        <div class="item"> 
+         <img src="images/91d4df5f767aba13e40321085e9262a5.jpg" width="680" height="360" /> 
+         <div class="carousel-caption"> 
+          <h1> Slide3 </h1> 
+         </div> 
+        </div> 
+       </div> 
+       <!-- Controls --> 
+       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span> <span class="sr-only"> Previous </span> </a> 
+       <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span> <span class="sr-only"> Next </span> </a> 
+      </div> 
+      <!-- carousel结束 --> 
+     </div> 
+     <!-- main_center_left 结束 --> 
+     <div class="main_center_right"> 
+      <ul class="nav_list"> 
+       <li class="place"> <a href="javascript:;"> <span class="title fontYahei"> 目的地 </span> <span class="text"> 40000个目的地 </span> </a> </li> 
+       <li class="bbs"> <a href="javascript:;"> <span class="title fontYahei"> 论坛 </span> <span class="text"> 7439080篇帖子 </span> </a> </li> 
+       <li class="ask"> <a href="javascript:;"> <span class="title fontYahei"> 问答 </span> <span class="text"> 291394个旅行问题 </span> </a> </li> 
+       <li class="plan"> <a href="javascript:;"> <span class="title fontYahei"> 行程助手 </span> <span class="text"> 旅行计划工具 </span> </a> </li> 
+      </ul> 
+      <div class="ind_app clearFix"> 
+       <div class="imgs"> 
+        <img src="http://static.qyer.com/images/www/index/lm_icon.png" width="85" height="85" alt="穷游折扣" /> 
+       </div> 
+       <div class="title fontYahei"> 
+        <a href="javascript:;"> 穷游移动应用 </a> 
+       </div> 
+       <div class="btn"> 
+        <a href="javascript" class="iphone" title="_blank"> iPhone </a> 
+        <a href="javascript" class="android" title="_blank"> Android </a> 
+        <a href="javascript" class="ipad" title="_blank"> iPad </a> 
+       </div> 
+      </div> 
+      <div class="cb"> 
+      </div> 
+     </div> 
+     <div class="cb"> 
+     </div> 
+    </div> 
+   </div> 
+   <!-- mian结束 --> 
+   <div class="detail"> 
+    <div class="det_left"> 
+     <div class="det_left_bbs"> 
+      <div class="bbs_tit"> 
+       <h2 class="bbs_tit_name"> 装修攻略 </h2> 
+       <a href="javascript:;" class="bbs_tit_more" title="more"> 更多 </a> 
+      </div> 
+      <div class="bbsList"> 
+       <ul class="bbs_list"> 
+        <li class="first clearfix"> 
+         <div class="pic"> 
+          <a href="javascript:;"> <img src="images/20013301.jpg" width="200" height="133" alt="" /> <span class="elite"> 精华 </span> </a> 
+         </div> 
+         <div class="cont"> 
+          <div class="top"> 
+           <p class="face"> <a href="javascript:;"> <img src="http://static.qyer.com/data/avatar/001/99/24/81_avatar_middle.jpg" width="48" height="48" alt="" /> </a> </p> 
+           <h3 class="title"> <a href="javascript:;" title="歪瓜游世界の十月关西（暴走京都奈良大阪，累的跟条土狗一样⊙﹏⊙）" target="_blank"> 歪瓜游世界の十月关西（暴走京都奈良大阪，累的... </a> <img src="http://static.qyer.com/images/www/index/bbs_route.png" width="16" height="16" alt="" title="" /> </h3> 
+           <div> 
+            <p class="fr"> <span class="time"> 2013-10-21 </span> <span class="view" title="浏览"> 66717 </span> <span class="reply" title="回复"> 573 </span> <span class="like" title="喜欢"> 111 </span> </p> 
+            <span> 作者： <a href="javascript:;"> ainvnv </a> </span> 
+           </div> 
+           <p class="bbstext"> 预告片... </p> 
+           <p class="comefrom"> 来自： <a target="_blank" href="http://bbs.qyer.com/forum-57-1.html" title=""> 日本/韩国/朝鲜 </a> 版 </p> 
+          </div> 
+         </div> </li> 
+        <li class="clearfix"> 
+         <div class="pic"> 
+          <a href="javascript:;"> <img src="images/T2_z34XXlaXXXXXXXX_!!738505425-0-jiajusns.jpg_790x10000.jpg" width="200" height="133" alt="" /> <span class="elite"> 精华 </span> </a> 
+         </div> 
+         <div class="cont"> 
+          <div class="top"> 
+           <p class="face"> <a href="javascript:;"> <img src="http://pic.qyer.com/album/user/526/49/REtTRhMDaA/index/200x133" width="48" height="48" alt="" /> </a> </p> 
+           <h3 class="title"> <a href="javascript:;" title="" target="_blank"> 【被遗忘的上帝后花园】--2500元格鲁吉亚8天富... </a> <img src="http://static.qyer.com/images/www/index/bbs_route.png" width="16" height="16" alt="" title="" /> </h3> 
+           <div> 
+            <p class="fr"> <span class="time"> 2013-10-21 </span> <span class="view" title="浏览"> 66717 </span> <span class="reply" title="回复"> 573 </span> <span class="like" title="喜欢"> 111 </span> </p> 
+            <span> 作者： <a href="javascript:;"> ainvnv </a> </span> 
+           </div> 
+           <p class="bbstext"> 在锁定格鲁吉亚为目的地之前，对它的唯一印象就是2008年那场突然爆发而又很快结束的战争。所以这是绝对冷门的目的地。在穷游和马蜂窝 </p> 
+           <p class="comefrom"> 来自： <a target="_blank" href="http://bbs.qyer.com/forum-57-1.html" title=""> 日本/韩国/朝鲜 </a> 版 </p> 
+          </div> 
+         </div> </li> 
+        <li class="clearfix first"> 
+         <div class="pic"> 
+          <a href="javascript:;" target="_blank"> <img src="images/T2.R34XmJXXXXXXXXX_!!738505425-0-jiajusns.jpg_790x10000.jpg" width="200" height="133" alt="" /> <span class="elite"> 精华 </span> </a> 
+         </div> 
+         <div class="cont"> 
+          <div class="top"> 
+           <p class="face"> <a href="javascript:;"> <img src="http://static.qyer.com/data/avatar/001/99/24/81_avatar_middle.jpg" width="48" height="48" alt="" /> </a> </p> 
+           <h3 class="title"> <a href="javascript:;" title="歪瓜游世界の十月关西（暴走京都奈良大阪，累的跟条土狗一样⊙﹏⊙）" target="_blank"> 歪瓜游世界の十月关西（暴走京都奈良大阪，累的... </a> <img src="http://static.qyer.com/images/www/index/bbs_route.png" width="16" height="16" alt="" title="" /> </h3> 
+           <div> 
+            <p class="fr"> <span class="time"> 2013-10-21 </span> <span class="view" title="浏览"> 66717 </span> <span class="reply" title="回复"> 573 </span> <span class="like" title="喜欢"> 111 </span> </p> 
+            <span> 作者： <a href="javascript:;"> ainvnv </a> </span> 
+           </div> 
+           <p class="bbstext"> 预告片... </p> 
+           <p class="comefrom"> 来自： <a target="_blank" href="http://bbs.qyer.com/forum-57-1.html" title=""> 日本/韩国/朝鲜 </a> 版 </p> 
+          </div> 
+         </div> </li> 
+        <li class="clearfix"> 
+         <div class="pic"> 
+          <a href="javascript:;" target="_blank"> <img src="images/20013303.jpg" width="200" height="133" alt="" /> <span class="elite"> 精华 </span> </a> 
+         </div> 
+         <div class="cont"> 
+          <div class="top"> 
+           <p class="face"> <a href="javascript:;"> <img src="http://pic.qyer.com/album/user/526/49/REtTRhMDaA/index/200x133" width="48" height="48" alt="" /> </a> </p> 
+           <h3 class="title"> <a href="javascript:;" title="" target="_blank"> 【被遗忘的上帝后花园】--2500元格鲁吉亚8天富... </a> <img src="http://static.qyer.com/images/www/index/bbs_route.png" width="16" height="16" alt="" title="" /> </h3> 
+           <div> 
+            <p class="fr"> <span class="time"> 2013-10-21 </span> <span class="view" title="浏览"> 66717 </span> <span class="reply" title="回复"> 573 </span> <span class="like" title="喜欢"> 111 </span> </p> 
+            <span> 作者： <a href="javascript:;"> ainvnv </a> </span> 
+           </div> 
+           <p class="bbstext"> 在锁定格鲁吉亚为目的地之前，对它的唯一印象就是2008年那场突然爆发而又很快结束的战争。所以这是绝对冷门的目的地。在穷游和马蜂窝 </p> 
+           <p class="comefrom"> 来自： <a target="_blank" href="http://bbs.qyer.com/forum-57-1.html" title=""> 日本/韩国/朝鲜 </a> 版 </p> 
+          </div> 
+         </div> </li> 
+        <li class="clearfix first"> 
+         <div class="pic"> 
+          <a href="javascript:;" target="_blank"> <img src="images/20013301.jpg" width="200" height="133" alt="" /> <span class="elite"> 精华 </span> </a> 
+         </div> 
+         <div class="cont"> 
+          <div class="top"> 
+           <p class="face"> <a href="javascript:;"> <img src="http://static.qyer.com/data/avatar/001/99/24/81_avatar_middle.jpg" width="48" height="48" alt="" /> </a> </p> 
+           <h3 class="title"> <a href="javascript:;" title="歪瓜游世界の十月关西（暴走京都奈良大阪，累的跟条土狗一样⊙﹏⊙）" target="_blank"> 歪瓜游世界の十月关西（暴走京都奈良大阪，累的... </a> <img src="http://static.qyer.com/images/www/index/bbs_route.png" width="16" height="16" alt="" title="" /> </h3> 
+           <div> 
+            <p class="fr"> <span class="time"> 2013-10-21 </span> <span class="view" title="浏览"> 66717 </span> <span class="reply" title="回复"> 573 </span> <span class="like" title="喜欢"> 111 </span> </p> 
+            <span> 作者： <a href="javascript:;"> ainvnv </a> </span> 
+           </div> 
+           <p class="bbstext"> 预告片... </p> 
+           <p class="comefrom"> 来自： <a target="_blank" href="http://bbs.qyer.com/forum-57-1.html" title=""> 日本/韩国/朝鲜 </a> 版 </p> 
+          </div> 
+         </div> </li> 
+        <li class="clearfix"> 
+         <div class="pic"> 
+          <a href="javascript:;" target="_blank"> <img src="images/20013303.jpg" width="200" height="133" alt="" /> <span class="elite"> 精华 </span> </a> 
+         </div> 
+         <div class="cont"> 
+          <div class="top"> 
+           <p class="face"> <a href="javascript:;"> <img src="http://pic.qyer.com/album/user/526/49/REtTRhMDaA/index/200x133" width="48" height="48" alt="" /> </a> </p> 
+           <h3 class="title"> <a href="javascript:;" title="" target="_blank"> 【被遗忘的上帝后花园】--2500元格鲁吉亚8天富... </a> <img src="http://static.qyer.com/images/www/index/bbs_route.png" width="16" height="16" alt="" title="" /> </h3> 
+           <div> 
+            <p class="fr"> <span class="time"> 2013-10-21 </span> <span class="view" title="浏览"> 66717 </span> <span class="reply" title="回复"> 573 </span> <span class="like" title="喜欢"> 111 </span> </p> 
+            <span> 作者： <a href="javascript:;"> ainvnv </a> </span> 
+           </div> 
+           <p class="bbstext"> 在锁定格鲁吉亚为目的地之前，对它的唯一印象就是2008年那场突然爆发而又很快结束的战争。所以这是绝对冷门的目的地。在穷游和马蜂窝 </p> 
+           <p class="comefrom"> 来自： <a target="_blank" href="http://bbs.qyer.com/forum-57-1.html" title=""> 日本/韩国/朝鲜 </a> 版 </p> 
+          </div> 
+         </div> </li> 
+       </ul> 
+       <p class="bbs_btn"> <span class="prev-null"> </span> <span class="next" page="2"> </span> </p> 
+      </div> 
+     </div> 
+     <!-- bbs部分结束 --> 
+     <div class="det_left_photo"> 
+      <div class="photo_tit"> 
+       <h2 class="photo_tit_name"> 效果图相册 </h2> 
+       <a href="javascript:;" class="photo_tit_more" title="POSTCARDS"> POSTCARDS </a> 
+       <span class="photo_tit_slogan"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一张照片, 一个瞬间, 在这里发现你的空间之美。 </span> 
+      </div> 
+      <div class="photo_fix"> 
+       <ul class="photo_list clearfix"> 
+        <li> <p class="list_pic"> <a href="javascript:;" title="_blank"> <img src="images/T2.R34XmJXXXXXXXXX_!!738505425-0-jiajusns.jpg_790x10000.jpg" alt="selection" /> </a> </p> 
+         <div class="foot"> 
+          <p class="face2"> <a href="javascript:;" data-bn-ipg="album-1-2" title="龙沙" target="_blank"> <img src="http://static.qyer.com/data/avatar/002/27/34/71_avatar_big.jpg" width="30" height="30" alt="龙沙" /> </a> </p> 
+          <p class="writer"> <a href="javascript:;" target="_blank" title="selection"> selection </a> </p> 
+          <p class="num"> <span class="picnum" title="照片"> 278 </span> <span class="viewnum" title="浏览"> 8905 </span> </p> 
+         </div> </li> 
+        <li> <p class="list_pic"> <a href="javascript:;" title="_blank"> <img src="images/T2_z34XXlaXXXXXXXX_!!738505425-0-jiajusns.jpg_790x10000.jpg" alt="西奥1" /> </a> </p> 
+         <div class="foot"> 
+          <p class="face2"> <a href="javascript:;" data-bn-ipg="album-1-2" title="西奥1" target="_blank"> <img src="http://static.qyer.com/data/avatar/002/27/34/71_avatar_big.jpg" width="30" height="30" alt="西奥1" /> </a> </p> 
+          <p class="writer"> <a href="javascript:;" target="_blank" title="selection"> 西奥1 </a> </p> 
+          <p class="num"> <span class="picnum" title="照片"> 212 </span> <span class="viewnum" title="浏览"> 8905 </span> </p> 
+         </div> </li> 
+        <li> <p class="list_pic"> <a href="javascript:;" title="_blank"> <img src="images/T2.R34XmJXXXXXXXXX_!!738505425-0-jiajusns.jpg_790x10000.jpg" alt="PAI+华欣" /> </a> </p> 
+         <div class="foot"> 
+          <p class="face2"> <a href="javascript:;" data-bn-ipg="album-1-2" title="PAI+华欣" target="_blank"> <img src="http://static.qyer.com/data/avatar/002/27/34/71_avatar_big.jpg" width="30" height="30" alt="PAI+华欣" /> </a> </p> 
+          <p class="writer"> <a href="javascript:;" target="_blank" title="selection"> PAI+华欣 </a> </p> 
+          <p class="num"> <span class="picnum" title="照片"> 262 </span> <span class="viewnum" title="浏览"> 8905 </span> </p> 
+         </div> </li> 
+       </ul> 
+      </div> 
+     </div> 
+     <div class="det_left_hotspot"> 
+      <div class="spot_tit"> 
+       <h2 class="spot_tit_name"> 论坛热门板块 </h2> 
+       <a href="javascript;;" title="_blank" class="spot_tit_more"> 更多 </a> 
+      </div> 
+      <div class="spot_fix"> 
+       <ul class="spot_list"> 
+        <li> <p class="pic2"> <a href="javascript:;"> <img src="http://bbs.qyer.com/images/go2eu/bbsicon/xjp.jpg" width="48" height="48" alt="新加坡/马来西亚/文莱" /> </a> </p> <p class="title2"> <a href="javascript:;" title="新加坡/马来西亚/文莱"> 婚房装修 </a> </p> <p> 85平神奇小户，做出3房2厅 </p> <p class="theme"> 20970个主题 </p> </li> 
+        <li> <p class="pic2"> <a href="javascript:;"> <img src="http://bbs.qyer.com/images/go2eu/bbsicon/tg.jpg" width="48" height="48" alt="泰国" /> </a> </p> <p class="title2"> <a href="javascript:;" title="泰国"> 泰国 </a> </p> <p> 冬荫功汤、四面佛和国王 </p> <p class="theme"> 25307个主题 </p> </li> 
+        <li> <p class="pic2"> <a href="javascript:;"> <img src="http://bbs.qyer.com/images/go2eu/bbsicon/mg.jpg" width="48" height="48" alt="美国" /> </a> </p> <p class="title2"> <a href="javascript:;" title="美国"> 美国 </a> </p> <p> 多元、都市和自然 </p> <p class="theme"> 20970个主题 </p> </li> 
+        <li> <p class="pic2"> <a href="javascript:;"> <img src="http://bbs.qyer.com/images/go2eu/bbsicon/xjp.jpg" width="48" height="48" alt="新加坡/马来西亚/文莱" /> </a> </p> <p class="title2"> <a href="javascript:;" title="新加坡/马来西亚/文莱"> 小三房 </a> </p> <p> 85平神奇小户，做出3房2厅 </p> <p class="theme"> 20970个主题 </p> </li> 
+        <li> <p class="pic2"> <a href="javascript:;"> <img src="http://bbs.qyer.com/images/go2eu/bbsicon/tg.jpg" width="48" height="48" alt="泰国" /> </a> </p> <p class="title2"> <a href="javascript:;" title="泰国"> 泰国 </a> </p> <p> 冬荫功汤、四面佛和国王 </p> <p class="theme"> 25307个主题 </p> </li> 
+        <li> <p class="pic2"> <a href="javascript:;"> <img src="http://bbs.qyer.com/images/go2eu/bbsicon/mg.jpg" width="48" height="48" alt="美国" /> </a> </p> <p class="title2"> <a href="javascript:;" title="美国"> 美国 </a> </p> <p> 多元、都市和自然 </p> <p class="theme"> 20970个主题 </p> </li> 
+        <li> <p class="pic2"> <a href="javascript:;"> <img src="http://bbs.qyer.com/images/go2eu/bbsicon/xjp.jpg" width="48" height="48" alt="新加坡/马来西亚/文莱" /> </a> </p> <p class="title2"> <a href="javascript:;" title="新加坡/马来西亚/文莱"> 新加坡/马来西亚/文莱 </a> </p> <p> 85平神奇小户，做出3房2厅 </p> <p class="theme"> 20970个主题 </p> </li> 
+        <li> <p class="pic2"> <a href="javascript:;"> <img src="http://bbs.qyer.com/images/go2eu/bbsicon/tg.jpg" width="48" height="48" alt="泰国" /> </a> </p> <p class="title2"> <a href="javascript:;" title="泰国"> 泰国 </a> </p> <p> 冬荫功汤、四面佛和国王 </p> <p class="theme"> 25307个主题 </p> </li> 
+        <li> <p class="pic2"> <a href="javascript:;"> <img src="http://bbs.qyer.com/images/go2eu/bbsicon/mg.jpg" width="48" height="48" alt="美国" /> </a> </p> <p class="title2"> <a href="javascript:;" title="美国"> 美国 </a> </p> <p> 多元、都市和自然 </p> <p class="theme"> 20970个主题 </p> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <!-- 左栏主要内容结束 --> 
+    <div class="det_right"> 
+     <div class="right_tit"> 
+      <h2 class="right_tit_name"> 装修公司折扣 </h2> 
+      <a href="javascript:;" target="_blank" class="right_tit_more"> 更多 </a> 
+     </div> 
+     <ul class="info"> 
+      <li> <p class="info_tit"> <a href="javascript:;" target="_blank"> 歌诗达维多利亚号新加坡至关丹+苏梅岛6天5晚邮轮特价(含北京出发联程机票+签证) </a> </p> <p class="info_price"> <em> 5500 </em> 元 </p> </li> 
+      <li> <p class="info_tit"> <a href="javascript:;" title="" target="_blank"> 全国多城市至巴黎7天5晚自由行特价(送签证) </a> </p> <p class="info_price"> <em> 8888 </em> 元 </p> </li> 
+     </ul> 
+     <div class="sideline"> 
+     </div> 
+     <div class="spot_tit"> 
+      <h2 class="spot_tit_name"> 穷游活动 </h2> 
+     </div> 
+     <div> 
+      <img src="images/21436f02cbd5a527a246b4de9ddd3d70.jpg" width="270" height="186" /> 
+     </div> 
+     <div class="sideline"> 
+     </div> 
+     <div class="spot_tit"> 
+      <h2 class="spot_tit_name"> 每日光荣版 </h2> 
+     </div> 
+     <div class="honor_title"> 
+      <span class="explain"> 游记被回复最多 </span> 
+      <span class="title3"> 最佳写作者 </span> 
+     </div> 
+     <ul class="honorlist"> 
+      <li> <a href="javascript:;" title=""> <img src="http://static.qyer.com/data/avatar/001/27/11/04_avatar_middle.jpg" width="48" height="48" alt="youyouyao" /> </a> </li> 
+      <li> <a href="javascript:;" title=""> <img src="http://static.qyer.com/data/avatar/002/87/60/20_avatar_middle.jpg" width="48" height="48" alt="少年耶稣" /> </a> </li> 
+      <li> <a href="javascript:;" title=""> <img src="http://static.qyer.com/data/avatar/001/32/93/36_avatar_middle.jpg" width="48" height="48" alt="lichole" /> </a> </li> 
+      <li> <a href="javascript:;" title=""> <img src="http://static.qyer.com/data/avatar/000/14/01/04_avatar_middle.jpg" width="48" height="48" alt="dandans" /> </a> </li> 
+      <li> <a href="javascript:;" title=""> <img src="http://static.qyer.com/data/avatar/000/85/47/79_avatar_middle.jpg" width="48" height="48" alt="pjzhang" /> </a> </li> 
+     </ul> 
+     <div class="honor_title"> 
+      <span class="explain"> 回答问题最多 </span> 
+      <span class="title3"> 最乐于助人 </span> 
+     </div> 
+     <ul class="honorlist"> 
+      <li> <a href="javascript:;" title=""> <img src="http://static.qyer.com/data/images/noavatar_middle.gif" width="48" height="48" alt="adamzhuang" /> </a> </li> 
+      <li> <a href="javascript:;" title=""> <img src="http://static.qyer.com/data/avatar/000/72/82/03_avatar_middle.jpg" width="48" height="48" alt="日云n" /> </a> </li> 
+      <li> <a href="javascript:;" title=""> <img src="http://static.qyer.com/data/avatar/002/08/06/12_avatar_middle.jpg" width="48" height="48" alt="伊西多" /> </a> </li> 
+      <li> <a href="javascript:;" title=""> <img src="http://static.qyer.com/data/avatar/001/13/83/92_avatar_middle.jpg" width="48" height="48" alt="wcm360" /> </a> </li> 
+      <li> <a href="javascript:;" title=""> <img src="http://static.qyer.com/data/avatar/000/58/16/01_avatar_middle.jpg" width="48" height="48" alt="南方的天空下" /> </a> </li> 
+     </ul> 
+     <div class="sideline"> 
+     </div> 
+     <div class="mt30"> 
+      <img src="images/d46c6ce8a80ba1eaba9c6afd0279098e.jpg" width="270" height="80" /> 
+     </div> 
+     <div class="mt30"> 
+      <img src="images/252940ca8046ed65c1fe667935668b7c.jpg" width="270" height="215" /> 
+     </div> 
+     <div class="mt30"> 
+      <div class="spot_tit"> 
+       <h2 class="spot_tit_name"> 邮件订阅 </h2> 
+      </div> 
+      <div class="email"> 
+       <p class="title4"> QYER Newsletter </p> 
+       <p class="text"> 获得定期的内容更新，产品功能发布和独特的优惠信息，立刻订阅穷游邮件！ </p> 
+       <div class="btn_input"> 
+        <form action="" method="get"> 
+         <input type="text" value="" name="email" placeholder="输入E-mail地址" class="ui_input" /> 
+         <input type="submit" value="订阅" class="ui_btn" /> 
+        </form> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="sideline"> 
+     </div> 
+     <div class="mt30"> 
+      <div class="spot_tit"> 
+       <img class="icon_xinlang" src="images/icon_weibo.png" /> 
+       <h2 class="spot_tit_name"> 在新浪微博关注穷游网 </h2> 
+      </div> 
+      <ul class="weibo_list"> 
+       <li> <a href="javascript:;" target="_blank"> @穷游网 </a> - 官方微博 </li> 
+       <li> <a href="javascript:;" target="_blank"> @穷游锦囊 </a> - 出境旅行指南 </li> 
+       <li> <a href="javascript:;" target="_blank"> @穷游问答 </a> - 旅行问答君 </li> 
+       <li> <a href="javascript:;" target="_blank"> @穷游折扣 </a> - 全球打折优惠 </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="footer"> 
+    <div class="footer_list"> 
+     <ul class="list_first"> 
+      <li> 关于我们 
+       <ul class="list_second"> 
+        <li> <a href="javascript:;"> 穷游简介 </a> </li> 
+        <li> <a href="javascript:;"> 联系我们 </a> </li> 
+        <li> <a href="javascript:;"> 合作伙伴 </a> </li> 
+       </ul> </li> 
+      <li> 加入穷游 
+       <ul class="list_second"> 
+        <li> <a href="javascript:;"> 招聘职位 </a> </li> 
+       </ul> </li> 
+      <li> 网站条款 
+       <ul class="list_second"> 
+        <li> <a href="javascript:;"> 会员条款 </a> </li> 
+        <li> <a href="javascript:;"> 社区指南 </a> </li> 
+        <li> <a href="javascript:;"> 版权声明 </a> </li> 
+        <li> <a href="javascript:;"> 免责声明 </a> </li> 
+       </ul> </li> 
+      <li> 帮助中心 
+       <ul class="list_second"> 
+        <li> <a href="javascript:;"> 新手上路 </a> </li> 
+        <li> <a href="javascript:;"> 使用帮助 </a> </li> 
+        <li> <a href="javascript:;"> 建议和投诉 </a> </li> 
+        <li> <a href="javascript:;"> 网站地图 </a> </li> 
+       </ul> </li> 
+      <li> 关注我们 </li> 
+     </ul> 
+    </div> 
+    <div class="copyright"> 
+     <a href="javascript" rel="nofollow"> <img src="images/foot_logo.png" alt="title" /> </a> 
+     <p> 2004-2013 &copy; 装饰网™ jju.com All rights reserved.&nbsp;&nbsp; <a href="javascript:;" target="_blank" rel="nofollow"> 鄂ICP备12003524号 </a> &nbsp;&nbsp;京公网安备11010502023470 </p> 
+     <p> 家具装饰网为您提供原创实用的装饰指南和家具攻略、装饰社区和问答交流平台 </p> 
+    </div> 
+   </div> 
+   <!-- wrap结束 --> 
+  </div>  
+ </body>
+</html>
