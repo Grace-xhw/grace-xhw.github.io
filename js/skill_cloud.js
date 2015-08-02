@@ -114,7 +114,7 @@ require(['echarts', 'echarts/chart/wordCloud'],
     };
 
     setTimeout(function(){
-      var myChart = ec.init(document.getElementById('skill_clound'));
+      var myChart = ec.init(document.getElementById('skill_cloud'));
       myChart.setOption(option);
     },1000);
   }

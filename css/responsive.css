@@ -1,27 +1,3 @@
-/* for nexus 4 and iphone landscape */
-/* the Google nexus Galaxy width 365px */
-/* the Google nexus  4 width 400px */
-@media screen and (min-width: 321px) and (max-width: 480px)  {
-
-  #avatar {
-    width: 50%;
-  }
-  .page .icon {
-    right: 0;
-  }
-
-  .contact-icon li{
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-  }
-  .contact-icon li img{
-    width: 40px;
-    height: 40px;
-  }
-}
-
-
 /* Non-Retina */
 @media screen and (-webkit-max-device-pixel-ratio: 1) {
 }
@@ -55,6 +31,22 @@ only screen and (min-device-pixel-ratio: 1.5) {
 /* the Google nexus Galaxy width 365px */
 /* the Google nexus  4 width 400px */
 @media screen and (min-width: 321px) and (max-width: 480px)  {
+  #avatar {
+    width: 50%;
+  }
+  .page .icon {
+    right: 0;
+  }
+
+  .contact-icon li{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  .contact-icon li img{
+    width: 40px;
+    height: 40px;
+  }
 }
 
 

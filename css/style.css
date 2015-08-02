@@ -451,13 +451,14 @@ body {
 }
 
 
-#skill_clound{
+#skill_cloud{
   height: 100%;
 }
 
 .container{
   width:90%;
   height:100%;
+  verflow-y: scroll;
   position: relative;
   margin: 45px 35px;
 }
