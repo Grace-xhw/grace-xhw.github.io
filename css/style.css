@@ -458,7 +458,7 @@ body {
 .container{
   width:90%;
   height:100%;
-  verflow-y: scroll;
+  overflow-y: scroll;
   position: relative;
   margin: 45px 35px;
 }
