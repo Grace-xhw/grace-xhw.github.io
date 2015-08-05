@@ -466,7 +466,7 @@ body{
 	height: 205px;
 	background: url(./../images/photo_bg.png) no-repeat 0 0;
 	margin: 0 3px;
-	padding: 14px 14px 9px 13px;
+	padding: 14px 10px 9px 13px;
 }
 /*.photo_list li .pic{
 	height: 133px;
