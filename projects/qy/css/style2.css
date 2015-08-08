@@ -1,0 +1,207 @@
+body{
+	margin: 0;
+	padding:0;
+	outline: none; 
+	position: relative;
+}
+.header{
+	width: 100%;
+	min-width:960px;
+	background: #147850;
+	position: static;
+	top: 0;
+	left: 0;
+	height: 38px;
+	border-bottom: 2px solid  #72b088;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	clear: both;
+	font: 12px/1.5 helvetica,arial,"hiragino sans gb","\5b8b\4f53",sans-serif;
+	color: #323232;
+}
+.header_center{
+	width: 980px;
+	position: relative;
+	margin: 0 auto;
+}
+.logo{
+	width: 110px;
+	height: 55px;
+	float: left;
+}
+.logo img{
+	width: 80px;
+	height: 38px;
+	padding-top: 0;
+}
+.nav{
+	float: left;
+	width: 440px;
+	margin-top: -5px;
+}
+.nav ul{
+	padding-left: 0; 
+	margin: 11px 40px 4px 0;
+}
+.nav ul li{
+	list-style-type: none;
+	float: left;
+	left: 500px;
+}
+.list{
+	text-decoration: none;
+	font-size: 18px;
+	color: #fff;
+    margin: auto 5px;
+}
+.list_hover{
+	z-index: 9999;
+	border-bottom: 2px solid #74b089;
+}
+.login{
+	width: 195px;
+	float: right;
+}
+.login_entry{
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+}
+.login_entry_tit{
+	font-size: 18px;
+	color: #fff;
+}
+.login_entry li{
+	float: right;
+	list-style-type: none;
+	margin: 0 4px;
+}
+.login_entry li a{
+	font-size: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+.search{
+	height: 28px;
+	float: right;
+	position: relative;
+	background: transparent;
+	z-index: 99;
+	margin: 4px auto;
+}
+.search_input{
+	width: 172px;
+	line-height: 17px;
+	background: #fff;
+	font-size: 12px;
+	border: none;
+	padding: 5px 7px;
+}
+.search_btn{
+	width: 28px;
+	height: 25px;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	text-indent: -100px;
+	background: url(./../images/head_search.png) no-repeat 0 0;
+	background-size:28px 28px; 
+	margin-left: -3px;
+}
+
+/*以下是regsiter部分*/
+.reg_wp{
+	width: 448px;
+	margin: 60px auto;
+}
+.reg_tip {
+	width: 306px;
+	height:80px;
+	margin: 0 auto;
+}
+.reg_main{
+	width: 420px;
+	margin: 10px auto;
+	background: #f5f4f0;
+	border:1px solid #c0c0c0;
+	box-shadow: 0px 3px 3px #555; 
+	padding: 20px 15px 10px 15px;
+	text-align: left;
+}
+.reg_tit{
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color:#636363;
+	margin-top:0; 
+	margin-left: 5px;
+}
+.reg_login{
+	width: 248px;
+	margin: 15px auto;
+}
+.reg_weibo,.reg_qq{
+	width: 100px;
+	height: 30px;
+	background: url(./../images/ks_login.png) no-repeat;
+	margin: 0 8px;
+	line-height: 30px;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 3px;
+	display: inline-block;
+}
+.reg_qq{
+	background-position: -110px 0;
+}
+.reg_line {
+	width: 420px;
+	height: 16px;
+	margin: 15px auto 20px;
+}
+.reg_line img{
+	width: 420px;
+	height: 16px;
+}
+.sub_tit{
+	font-size: 14px;
+	float: right;
+	color: #636363;
+}
+.sub_tit a, #check_box a{
+	color: #0073b6;
+	text-decoration: none;
+}
+.sub_tit a:hover,#check_box a:hover{
+	text-decoration: underline;
+}
+.reg_inp{
+	width: 400px;
+	height: 20px;
+	padding: 5px;
+	margin:0 4px;
+	color: #636363;
+	font-size: 14px;
+}
+#check_box{
+	font-size: 12px;
+	color: #636363;
+	margin:5px auto; 
+}
+.reg_check{
+	margin-top:5px; 
+	margin-bottom: 20px; 
+}
+#reg_btn{
+	width: 248px;
+	height: 40px;
+	background: #147850;
+	border-radius: 3px;
+	font:500 24px/40px helvetica,arial,"Microsoft YaHei",\5b8b\4f53,sans-serif;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	overflow: visible;
+}
+#reg_btn:hover{
+	background: #1CA66F;
+}

@@ -51,6 +51,11 @@ body{
 	float: left;
 	left: 500px;
 }
+.nav ul li .list:hover,.nav ul li .list:visited,.nav ul li .list:link{
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+}
 .list{
 	text-decoration: none;
 	font-size: 18px;
@@ -113,6 +118,7 @@ body{
 	background: url(./../images/head_search.png) no-repeat 0 0;
 	background-size:28px 28px; 
 	margin-left: -3px;
+	outline: none;
 }
 /*首页main部分*/
 .main{
@@ -723,4 +729,7 @@ body{
 .copyright p{
 	margin: 0;
 	padding: 0;
+}
+.carousel-caption h1{
+	font-size: 16px;
 }
