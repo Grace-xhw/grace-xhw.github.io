@@ -265,6 +265,7 @@ body{
 /*main_column*/
 .main_column{
 	width: 100%;
+	min-width: 1300px;
 	margin-top: 50px;
 	margin-bottom: 60px;
 	padding: 0;
@@ -288,7 +289,7 @@ body{
 	width: 325px;
 	background: #fff;
 	position: absolute;
-	right: 25px;
+	left: 999px;
 	top: 0;
 }
 .col_left_header{
