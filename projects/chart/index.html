@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Praxair Express</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate-1.13.1.js"></script>
+	<script type="text/javascript" src="js/jquery.validate-1.13.1.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -37,22 +41,21 @@
 	<div class="main">
 		<div class="col_left left">
 			<div class="cGray">
-				<form action="#">
+				<form action="#" id="demoForm">
 					<h3>Enter Login Detail</h3>
 					<fieldset>
 						<label for="uName">Username(This is your email address)</label>
-						<input type="text" class="text" id="uName" name="uName" >
+						<input type="text" class="text" id="username" name="username" >
 					</fieldset>
 					<fieldset>
 						<label for="pwd">Password</label>
-						<input type="password" class="pwd" id="pwd" name="pwd">
+						<input type="password" class="pwd" id="password" name="password">
 					</fieldset>
 					<fieldset class="checkbox">
 						<input type="checkbox" checked="checked" value="" id="isRemember" name="isRemember">
 						<label>Remember Me</label>
 						<p>
-							<a href="javascript:;" class="blueBtn right">Login
-							</a>
+							<a href="javascript:;" class="blueBtn right" id="btn-login">Login</a>
 						</p>
 					</fieldset>
 				</form>

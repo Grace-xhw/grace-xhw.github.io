@@ -1,0 +1,348 @@
+/*reset css*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+:focus {
+	outline: 1;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*--兑换商城--css*/
+body{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    width: 100%;
+    background: #fff;
+    font-size: 15px;
+}
+.profit{
+    width: 90%;
+    margin: 0 auto;
+    padding: 45px auto;
+}
+.profit p img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 15%;
+    height: 15%;
+    margin-right: 10px;
+}
+.profit p{
+    color: #3A4051;
+    text-align: center; 
+    border-bottom: 1px solid #E3E3E3;
+    padding: 28px 0;
+}
+.profit p span{
+    color: #F3641B;
+    font-size: 18px;
+    vertical-align: middle; 
+}
+.item1,.item2{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.item1 p,.item2 p{
+    color: #6C6A6A;
+    border-bottom: 1px solid #E3E3E3;
+}
+.item1 p a,.item2 p a{
+     color: #6C6A6A;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.item1 .icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 19px 8px 19px 15px;
+    width: 20px;
+    height: 20px;
+}
+.item2 .icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 17px 10px 17px 16px;
+    width: 18px;
+    height: 24px;
+}
+.arrow{
+    display: inline-block;
+    height: 15px;
+    vertical-align: middle;
+    position: absolute;
+    right: 15px;
+    margin: 22px 0;   
+}
+
+/*/*支付宝提现页面*/
+.zfb{
+    padding: 39px 0 19px 0;
+}
+.wd{
+    padding: 20px 0 19px 0;
+}
+.zfb,.wd,.tele_num{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #E3E3E3;
+}
+.zfb span,.wd span{
+    color: #696767;
+}
+.zfb input,.wd input{
+    margin-left: 10px;
+    color: #F3641B;
+    padding: 0;
+    width: 40%;
+    border: none;
+    outline: none;
+}
+.capable{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.capable span,.select span{
+    font-size: 10px;
+    color: #999999;
+    display: inline-block;
+    margin-top: 4px;
+}
+.capable input,.select input{
+   margin-left: 5px;
+   color: #F3641B;
+   padding: 0;
+   width: 40%;
+   border: none;
+   outline: none;
+}
+#btn{
+    display: block;
+    width: 70%;
+    height: 33px;
+    font-size: 15px;
+    color: #fff;
+    background: #F3641B;
+    margin: 75px auto 37px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    -webkit-border-radius:4px;
+    cursor: pointer;
+}
+#tip{
+    display: block;
+    width: 50%;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    background: #343232;
+    opacity: .9;
+    position: absolute;
+    top: 73px;
+    left: 25%;
+    border-radius: 8px;
+    -webkit-border-radius:8px;
+    display: none;
+}
+/*手机充值页面*/
+.tele_num span{
+    display: inline-block;
+    margin: 34px 41px 9px 0;
+}
+.tele_num input{
+   color: #F3641B;
+   padding: 0;
+   width: 40%;
+   border: none;
+   outline: none;
+}
+.select{
+    width: 90%;
+    margin: 15px auto 12px;
+}
+.faceValue{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.faceValue span{
+    display: inline-block;
+    width: 15%;
+    padding: 15px 0;
+    margin-right: 12px;
+    text-align: center;
+    background: #EAEAEA;
+    border-radius: 2px solid #EAEAEA;
+    -webkit-border-radius:2px solid #EAEAEA;
+    box-shadow: 0 0 1px #F3641B;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+.faceValue span:hover{
+    background: #F3641B;
+}
+.faceValue span:hover a{
+    color: #fff;
+}
+.faceValue span:last-child{
+    margin-right: 0;
+}
+.faceValue a{
+    color: #F3641B;
+    text-decoration: none;
+}
+.confirm{
+    width: 100%;
+    position: relative;
+}
+#btn_sec{
+    display: block;
+    width: 70%;
+    height: 33px;
+    font-size: 15px;
+    color: #fff;
+    background: #F3641B;
+    margin: 62px auto 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    -webkit-border-radius:4px;
+    cursor: pointer;
+}
+#tip_sec{
+    display: block;
+    width: 50%;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    background: #343232;
+    opacity: .9;
+    position: absolute;
+    top: -20px;
+    left: 25%;
+    border-radius: 4px;
+    -webkit-border-radius:4px;
+    display: none;
+}
+#page_second,#page_third{
+    z-index: 3;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    bottom: 0;
+}
+.hidden {
+    display: none;
+}
+#alert_tips_bg{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:2;
+    background: #000;
+    opacity: .6;
+}
+
+
+
+
+
+
+
+
+

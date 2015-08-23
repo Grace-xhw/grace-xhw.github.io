@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>兑换商城</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="alert_tips_bg" class="hidden"></div>
+	<div class="profit">
+		<p>
+			<img src="images/duihuanshangcheng_qian.png">总收益: <span>100.12元</span>
+		</p>
+	</div>
+	<div class="item1">
+		<p>
+			<img class="icon" src="images/duihuanshangcheng_zhifubao.png">
+			<a href="javascript:;" id="withdraw">提现到支付宝</a>
+			<img class="arrow" src="images/liebiao_next_icon-.png">
+		</p>
+	</div>
+	<div class="item2">
+		<p>
+			<img class="icon" src="images/duihuanshangcheng_phone.png">
+			<a href="javascript:;" id="charge">手机充值</a>
+			<img class="arrow" src="images/liebiao_next_icon-.png">
+		</p>
+	</div>
+	<div class="item2">
+		<p>
+			<img class="icon" src="images/duihuanshangcheng_phone-liuliang.png">
+			<a>手机充值</a>
+			<img class="arrow" src="images/liebiao_next_icon-.png">
+		</p>
+	</div>
+	<div id="page_second" class="hidden">
+		<div class="fix">
+			<div class="zfb">
+				<span>输入支付宝账号</span>
+				<input type="text" name="account" id="account">
+			</div>
+			<div class="wd">
+				<span>提现金额</span>
+				<input type="text" name="cash" id="cash">
+			</div>
+			<div class="capable" >
+				<span>可提现金额：</span>
+				<input type="text" value="" id="capable_cash">
+				<button type="button" name="btn" onclick="oncli()" id="btn">确认提现</button>
+				<span id="tip">转出金额超限</span>
+			</div>
+		</div>
+	</div>
+	<div id="page_third" class="hidden">
+		<div class="fix">
+			<div class="tele_num">
+				<span>输入手机号码</span>
+				<input type="text" name="number" id="number">
+			</div>
+			<div class="select">
+				<p>选择充值金额</p>
+				<span>可充值金额：</span>
+				<input type="text" name="cash" id="cash">
+			</div>
+			<div class="faceValue">
+				<span><a href="javascript:;">10</a></span>
+				<span><a href="javascript:;">20</a></span>
+				<span><a href="javascript:;">30</a></span>
+				<span><a href="javascript:;">50</a></span>
+				<span><a href="javascript:;">100</a></span>
+			</div>
+			<div class="confirm">
+				<button type="button" onclick="javascript:;" id="btn_sec">确认充值</button>
+				<span id="tip_sec">可用金额不足</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
