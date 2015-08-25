@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<title>Ajax</title>
+</head>
+<body>
+
+<button>Click</button>
+
+<script type="text/javascript">
+	$(function(){
+		$("button").click(function(){
+			$.get("js/data.json",function(data, status){
+				alert(data);
+			})
+		})
+	})
+</script>
+</body>
+</html>

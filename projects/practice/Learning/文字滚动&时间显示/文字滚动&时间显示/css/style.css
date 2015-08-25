@@ -1,0 +1,30 @@
+#time{
+	width: 280px;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 20px;
+	margin-left: 80px;
+	float:left;
+	text-align: center;
+	border: 1px dashed #ccc; 
+}
+.scroll{
+	width: 400px;
+	margin: 50px auto;
+	padding: 0 10px;
+	background: #fff;
+	text-align: left;
+	border: 2px solid #ccc;
+}
+dl,dt{
+	list-style:none;
+}
+dl dt{
+    line-height:24px;
+	font-size:16px;
+	font-weight:bold;
+	color:#000;
+ }
+ dd{
+ 	color: blue;
+ }

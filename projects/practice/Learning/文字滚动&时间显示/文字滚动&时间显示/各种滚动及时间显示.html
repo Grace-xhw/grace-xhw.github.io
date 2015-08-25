@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>滚动效果</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/time-test.js"></script>
+</head>
+<body>
+	<div id="time">显示时间的位置</div>
+	<div class="scroll">
+		<dl>
+			<dt>文字滚动示例：默认向左</dt>
+			<dd><marquee>我默认向左滚动......</marquee></dd>
+		</dl>
+		<dl>
+			<dt>文字滚动示例：向右</dt>
+			<dd><marquee direction="right">我设置成向右滚动......</marquee></dd>
+		</dl>
+		<dl>
+			<dt>文字滚动示例（默认方向，滚动方式为alternate，一直循环，速度为2）：</dt>
+			<dd><marquee scrollamount="2" behavior="alternate"; loop="-1">我循环（设成-1）来回滚动。。。</marquee></dd>
+		</dl>
+		<dl>
+			<dt>文字滚动示例（默认方向，滚动方式为alternate，循环3次后停止，速度为2）：</dt>
+			<dd><marquee scrollamount="2" behavior="alternate"; loop="3">我循环（设成-1）来回滚动。。。</marquee></dd>
+		</dl>
+		<dl>
+		  <dt>文字滚动示例（向上，背景色为#CCFF66，设置了背景宽度和高度 鼠标上移停止，移走继续滚动）：</dt>
+		  <dd><marquee direction="up"  bgcolor="#CCFF66" width="250" height="55" onmouseover="this.stop();" onmouseout="this.start();">我在区域内滚动，向上哟。。。。</marquee></dd>
+		</dl>
+		dl>
+		  <dt>文字滚动示例（向上，推迟300ms）：</dt>
+		  <dd><marquee direction="up" scrolldelay="300" bgcolor="#CCFF66" width="250" height="55">我在区域内滚动，向上哟。。。。</marquee></dd>
+		</dl>
+	</div>
+</body>
+</html>
+
+
+

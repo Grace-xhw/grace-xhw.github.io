@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    data = {};
+    data.name = $("#name").val();
+    data.city = $("#city").val();
+    console.log(data);
+    $.post("js/demo_test_post.asp",
+    data,
+    function(data,status){
+      alert("数据：" + data + "\n状态：" + status);
+    });
+  });
+});
+
+// $(function(){
+//   $("button").click(function(){
+//     data={};
+//     data.name=$("#name").val();
+//     data.city=$("#city").val();
+//     // console.log(data);
+//     $.post("js/demo_test_post.asp",data,function(){
+//       alert("数据：" + data + "\n状态：" + status);
+//     })
+//   })
+// })
+</script>
+</head>
+<body>
+<label>Name:</label><input type="text" id='name'/>
+<label>City:</label><input type="text" id='city'/>
+<button>向页面发送 HTTP POST 请求，并获得返回的结果</button>
+
+</body>
