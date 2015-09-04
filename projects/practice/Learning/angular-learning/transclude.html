@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <title>Angular-transclude</title>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript">
+      angular.module('app',[])
+      .directive("hello",function(){
+          return{
+              restrict:"AE",
+              transclude:true,
+              template:"<div>Hello everyone!<div ng-transclude></div</div>"
+          }
+      })
+
+  </script>
+</head>
+<body>
+    <hello>
+        <div>这里是指令内部的内容</div>
+    </hello>
+</body>
+</html>

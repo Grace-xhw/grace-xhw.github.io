@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <title>Angular-learning</title>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript">
+  	 // var myModule=angular.module('app',[]);
+  	 // myModule.controller('HelloAngular',function($scope) {
+  	 // 	$scope.greeting={
+  	 // 		text:'Hello'
+  	 // 	}
+  	 // })
+
+	  angular.module('app',[])
+  	.controller('HelloAngular',function($scope) {
+  	 	$scope.greeting={
+  	 		text:'Hello'
+  	 	}
+  	 })
+  </script>
+</head>
+<body>
+      <div ng-controller="HelloAngular">
+      	<p><span ng-bind='greeting.text'></span>,Angular</p>
+      </div>
+</body>
+</html>

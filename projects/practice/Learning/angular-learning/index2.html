@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head>
+	<meta charset="UTF-8">
+	<title>angular-learning</title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript">
+	var myModule=angular.module('app',[]);
+	myModule.controller('GreeCtrl',function ($scope,$rootScope) {
+		$scope.name='World';
+		$rootScope.department = 'Angular';
+	})
+	myModule.controller('ListCtrl',function($scope){
+		$scope.names = ['Lily','Jim','Grace','Tom'];
+	})
+
+	</script>
+</head>
+<body>
+	<div class="show-scope-demo">
+		<div ng-controller="GreeCtrl">
+			Hello {{name}} !
+		</div>
+		<div ng-controller="ListCtrl">
+			<ol>
+				<li ng-repeat="name in names">
+					{{name}} from {{department}}
+				</li>
+			</ol>
+		</div>
+	</div>
+</body>
+</html>

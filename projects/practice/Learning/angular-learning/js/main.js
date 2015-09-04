@@ -1,0 +1,29 @@
+
+angular.module('UserInfoModule',[])
+.controller('UserInfoCtrl',['$scope',function($scope){
+	$scope.userInfo={
+		email:"1656099332@qq.com",
+		password:"7890917597",
+		autoLogin:true
+	}
+	$scope.action=function(){
+		alert('Error password!')
+	}
+	$scope.getFormData=function(){
+		console.log($scope.userInfo);
+	}
+	$scope.setFormData=function(){
+		$scope.userInfo={
+			email:'kdajglkdl@163.com',
+			password:'9287957250',
+			autoLogin:false
+		}
+	}
+	$scope.restoreFormData=function(){
+		$scope.userInfo={
+			email:"1656099332@qq.com",
+			password:"7890917597",
+			autoLogin:true
+		}
+	}
+}])

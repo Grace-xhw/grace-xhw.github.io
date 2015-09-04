@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <title>实现不同控制器调用不同方法</title>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript">
+      var myModule=angular.module('app',[]);
+      myModule.controller('myCtrl1',function($scope){
+          $scope.loadData1=function(){
+              console.log("数据加载中11111。。。");
+          }
+      });
+       myModule.controller('myCtrl2',function($scope){
+          $scope.loadData2=function(){
+              console.log("数据加载中22222。。。");
+          }
+      });
+      myModule.directive("loader",function(){
+          return{
+              restrict:"AE",
+              link:function(scope,element,attrs){
+                  element.bind("mouseenter",function(){
+                    // scope.loadData();
+                    // scope.$apply("loadData()");
+                    scope.$apply(attrs.howtoload);
+                    // 注意，调用时必须使用全小写，不管页面定义是否用驼峰,也不用写括号调用
+                  });
+              }
+          }
+      })
+
+  </script>
+</head>
+<body>
+    <div ng-controller="myCtrl1">
+        <loader howToLoad="loadData1()">滑动加载1</loader>
+    </div>
+    <div ng-controller="myCtrl2">
+        <loader howToLoad="loadData2()">滑动加载2</loader>
+    </div>
+</html>

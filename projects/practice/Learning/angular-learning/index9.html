@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyCssModule">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular-learning</title>
+	<style type="text/css">
+		.text-red{
+			background-color: red;
+		}
+		.text-green{
+			background-color: green;
+		}
+	</style>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript">
+		angular.module('MyCssModule',[])
+		.controller('cssCtrl', function($scope){
+					$scope.color = "red";
+					$scope.setColor = function(){
+						if ($scope.color == "red") {
+							$scope.color = "green";
+						}else{
+							$scope.color="red";
+						}
+					}
+				})
+	</script>
+</head>
+<body>
+	<div ng-controller="cssCtrl">
+		<p class="text-{{color}}">测试CSS样式</p>
+		<button class="btn btn-default" ng-click="setColor()">切换颜色</button>
+	</div>
+</body>
+</html>

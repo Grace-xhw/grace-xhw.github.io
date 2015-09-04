@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="bookStoreApp">
+  <head>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript">
+        var bookStoreApp = angular.module('bookStoreApp',['ngRoute','ngAnimate','bookStoreContrls','bookStoreFilter','bookStoreServices','bookStoreDirectives']);
+
+        bookStoreApp.config(function($routeProvider) {
+          $routeProvider.when('/hello',{
+            templateUrl:'tpls/hello.html',
+            controller:'HelloCtrl'
+          }).when('/list',{
+            templateUrl:'tpls/bookList.html',
+            controller:'bookStoreCtrl'
+          }).otherwise({
+            redirectTo:'/hello'
+          })
+        })
+  </script>
+  </head>
+  <body>
+
+  </body>
+</html>

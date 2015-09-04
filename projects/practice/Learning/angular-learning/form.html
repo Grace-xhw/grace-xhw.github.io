@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="MyModule">
+<head>
+  <meta charset="utf-8">
+  <title>angular 表单验证</title>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript">
+      var myModule = angular.module("MyModule",[]);
+      myModule.controller('TestFormModule',function($scope){
+          $scope.user={
+            userName:'Grace',
+            password:''
+          };
+          $scope.save=function(){
+            alert("保存数据！");
+          }
+      })
+  </script>
+</head>
+<body>
+    <form name="myForm" ng-submit="save()" ng-controller="TestFormModule">
+        <input name="userName" type="text" ng-model="user.userName" required />
+        <input name="password" type="password" ng-model"user.password" required />
+        <input type="submit" ng-disabled="myForm.$invalid" />
+    </form>
+</body>
+</html>

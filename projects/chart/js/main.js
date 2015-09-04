@@ -35,8 +35,11 @@
                 $(element).removeClass(errorClass).addClass(validClass);
             },
             submitHandler: function (form) {
-                // $.post(url,data,function(){
-                    
+                // data={};
+                // data.name=$("#username").val();
+                // data.pwd=$("#password").val();
+                // $.post(url,data,function(data,status){
+                // alert("数据：" + data + "\n状态：" + status);
                 // })
                 console.log($(form).serialize())
             }

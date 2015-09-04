@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app='app'>
+  <head>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript">
+    angular.module('app',[] )
+    .controller("greet",function($scope){
+      $scope.name='World';
+    })
+    .controller("list",function($scope){
+      $scope.names=['Lucy','Tim','Vojta',"xiaoming",'Tina'];
+    })
+  </script>
+  </head>
+  <body>
+    <div ng-controller="greet">
+        Hello{{name}}!
+    </div>
+    <div ng-controller="list">
+      <ol>
+        <li ng-repeat="name in names">{{name}}</li>
+      </ol>
+    </div>
+  </body>
+</html>

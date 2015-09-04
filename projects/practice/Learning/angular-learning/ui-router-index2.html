@@ -1,0 +1,46 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<title>Angular-learning</title>
+ <!--    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script> -->
+    <!-- 或者使用以下本地文件 -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script>
+        var newModule=angular.module('myApp',['ui.router']);
+        newModule.config(function($stateProvider){
+            $stateProvider
+                .state('index',{
+                    url:"",
+                    views:{
+                        "viewA":{template:"A"},
+                        "viewB":{template:"B"}
+                    }
+                })
+                .state('route1',{
+                    url:"/route1",
+                    views:{
+                        "viewA":{template:"This is A"},
+                        "viewB":{template:"This is B"}
+                    }
+                })
+                .state('route2',{
+                    url:"/route2",
+                    views:{
+                        "viewA":{template:"route2.viewA"},
+                        "viewB":{template:"route2.viewB"}
+                    }
+                })
+        })
+    </script>
+
+</head>
+<body>
+    <div ui-view="viewA"></div>
+    <div ui-view="viewB"></div>
+    <a ui-sref="route1">Route1</a>
+    <a ui-sref="route2">Route2</a>
+</body>
+</html>

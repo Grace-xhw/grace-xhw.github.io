@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript">
+  angular.module('app',[])
+  .controller('btnCtrl',function($scope){
+    $scope.action=function(){
+      if ($scope.name=='OK') {
+        $scope.name='World';
+      }else{
+        $scope.name="OK";
+      };
+    } 
+    $scope.name='World';
+  })
+  .controller('btnCtrl2',function($scope){
+    $scope.action2=function(){
+      alert("This is show by angular!")
+    }
+  })
+  </script>
+  </head>
+  <body>
+ <!--      <div ng-controller="MyCtrl">
+          Hello {{name}}!
+          <button ng-click="action()">OK</button>
+      </div> -->
+
+      <div ng-controller="btnCtrl">
+          Hello {{name}} !
+          <button ng-click="action()">New Button</button>
+      </div>
+      <div ng-controller="btnCtrl2">
+        <button ng-click="action2()">Second Button</button>
+      </div>
+  </body>
+</html>
+

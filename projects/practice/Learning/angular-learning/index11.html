@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head>
+	<meta charset="UTF-8">
+	<title>angular-learning</title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript">
+		angular.module('app',[])
+		.controller('menuCtrl',function($scope){
+			$scope.menuState = {};
+			// $scope.menuState={show:false};
+			$scope.menuState.hide = true;
+			$scope.toggleMenu=function(){
+				$scope.menuState.hide=!$scope.menuState.hide;
+			};
+		})
+	</script>
+</head>
+<body>
+	<div ng-controller="menuCtrl">
+		<button ng-click="toggleMenu()">Toggle menu</button>
+		<ul ng-hide="menuState.hide">
+			<li>menu1</li>
+			<li>menu2</li>
+			<li>menu3</li>
+		</ul>
+	</div>
+</body>
+</html>
+
+<!-- ng-hide与ng-show相反，作用原理一致 -->
