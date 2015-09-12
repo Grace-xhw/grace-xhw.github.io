@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>$http的应用</title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript">
+		angular.module('app',[])
+		.controller('LoadDataCtrl',function ($scope,$http) {
+			$http({
+				method:'GET',
+				url:'data.json'
+			}).success(function(data,status,headers,config){
+				console.log("success...");
+				console.log(data);
+				$scope.users=data;
+			}).error(function(data,status,headers,config){
+				console.log("error");
+			})
+		})
+	</script>
+</head>
+<body>
+	<div ng-controller="LoadDataCtrl">
+		<ul>
+			<li ng-repeat="user in users">
+				{{user.name}}
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

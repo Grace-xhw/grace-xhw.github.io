@@ -1,0 +1,116 @@
+@charset"utf-8";
+
+body{
+	background-color:#fff;
+}
+//less中要声明变量，一定要用@开头 例如：@变量名：值；
+@test_width:180px;
+
+.box {
+	width: @test_width+50;
+	height:@test_width*1.1;
+	background:yellow;
+	.border;
+}
+
+//混合
+.border{
+	border:solid 5px blue;
+}
+.box2{
+	.box;
+	margin-top:30px;
+}
+
+//混合 - 可带参数的 
+.border2(@border-width){
+	border: @border-width solid pink;
+}
+
+.test-hunhe2{
+	.box2;
+	.border2(10px);
+}
+
+//混合 - 默认带值
+.border3(@border-width:8px){
+	border:@border-width dashed violet;
+}
+.test-hunhe3{
+	.box2;
+	.border3();
+}
+.test-hunhe4{
+	.box2;
+	.border3(2px);
+}
+
+//混合的例子
+.border_radius(@radius:5px){
+	-webkit-border-radius:@radius;
+	border-radius:@radius;
+}
+.box3{
+	.test-hunhe3;
+	.border_radius();
+}
+
+//匹配模式
+.trangle{
+	width:0;
+	height:0;
+	overflow:hidden;
+	border:10px solid transparent;
+	border-top:10px solid #ee82ee;
+	.pos(r);
+	top:0;
+	left:15px;
+}
+
+.pos(r){
+	position:relative;
+}
+
+//运算 参考本文档最上面的加减乘除;
+
+//嵌套规则
+.list{
+	width:600px;
+	margin:30px auto;
+	padding:0;
+	list-style-type:none;
+
+	li{
+		height:30px;
+		line-height:30px;
+		background-color:pink;
+		margin-bottom:5px;
+	}
+
+	a{
+		float:left;
+		text-indent:5px;
+		text-decoration:none;
+		// & 代表它的上一层的元素，如这里，就代表外层a
+		&:hover{
+			text-decoration:underline;
+			color:red;
+		}
+	}
+	span{
+		float:right;
+		padding-right:5px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

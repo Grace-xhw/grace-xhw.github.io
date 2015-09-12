@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>$http的应用</title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript">
+		angular.module('app',[])
+		.controller('dataFilter',function($scope,$filter){
+			$scope.originalText = 'hello';
+			$scope.filteredText = $filter('uppercase')($scope.originalText);
+		})
+		.filter('filter1',function(){
+			return function(item){
+				return item + 'come on!'
+			}
+		})
+
+		// cellFilter:'currency:"￥“'
+		
+	</script>
+</head>
+<body>
+	<div ng-controller="dataFilter">
+		{{ 1304375948024 | date }}
+		<br />
+		{{ 1304375948024 | date:"MM/dd/yyyy @ h:mma" }}
+		<br />
+		{{ 1304375948024 | date:"yyyy-MM-dd hh:mm:ss"}}
+		<br />
+
+
+		<h3>{{ originalText }}</h3>
+		<h3>{{ filteredText }}</h3>
+		<br />
+		<br />
+
+		{{'旭日流水清风竹'| filter1}}
+	</div>
+</body>
+</html>
