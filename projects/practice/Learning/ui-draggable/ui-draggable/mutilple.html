@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Droppable - Default functionality</title>
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <style>
+  .drag-bar { 
+    width: 150px; 
+    text-align: center; 
+    float: left; 
+    margin: 10px 10px 10px 0; 
+    background:rgb(188, 228, 201);
+    list-style-type: none;
+  }
+  #title{
+    padding: 11px;
+  }
+  #edit {
+    width: 130px; 
+    padding-left: 5px; 
+    outline: none;
+    border: none;
+    margin: 5px;
+    background: transparent;
+  }
+  #droppable { 
+    width: 500px; 
+    height: 500px; 
+    padding: 0.5em; 
+    float: left; 
+    margin: 100px; 
+}
+  </style>
+  <script>
+  $(function() {
+    $( ".draggable" ).draggable();
+    $( "#droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Dropped!" );
+      }
+    });
+  });
+  </script>
+</head>
+<body>
+ 
+<!-- <div id="draggable1" class="ui-widget-content drag-bar">
+  <p>Drag the first</p>
+</div>
+
+ <div id="draggable2" class="ui-widget-content drag-bar">
+  <p>Drag the second</p>
+</div>
+
+<div id="draggable3" class="ui-widget-content drag-bar">
+  <p>Drag the third</p>
+</div>
+
+<div id="draggable4" class="ui-widget-content drag-bar">
+  <p>Drag the forth</p>
+</div>
+
+<div id="draggable5" class="ui-widget-content drag-bar">
+  <p>Drag the fifth</p>
+</div> -->
+
+<ul>
+  <li class="ui-widget drag-bar draggable">
+    <p>我是列表1</p>
+  </li>
+  <li class="ui-widget drag-bar draggable">
+    <p>我是列表2</p>
+  </li>
+  <li class="ui-widget drag-bar draggable">
+    <p>我是列表3</p>
+  </li>
+  <li class="ui-widget drag-bar draggable">
+    <p>我是列表4</p>
+  </li>
+  <li class="ui-widget drag-bar draggable">
+    <p>我是列表5</p>
+  </li>
+  <li class="ui-widget drag-bar draggable" id="title">
+    <input id="edit" type="text" value="" placeholder="我是一个输入框"/>
+  </li>
+</ul>
+
+<div id="droppable" class="ui-widget-header">
+  <p>Drop here</p>
+</div>
+ 
+ 
+</body>
+</html>
+
+
+
+
+
+
+
