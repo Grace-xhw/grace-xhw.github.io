@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>linear-gradient</title>
+</head>
+<body>
+	<div>
+		<canvas id="canvas" style="display:block; margin:10px auto; border:1px solid #aaa;"></canvas>
+	</div>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var canvas = document.getElementById('canvas');
+			var context = canvas.getContext('2d');
+
+			canvas.width = 800;
+			canvas.height = 600;
+
+			// 线性渐变填充
+			var linearGrad = context.createLinearGradient(0,0,800,600); //倾斜渐变
+			// var linearGrad = context.createLinearGradient(0,0,800,0); //水平渐变
+			// var linearGrad = context.createLinearGradient(0,0,0,600); //垂直渐变
+			linearGrad.addColorStop(0.0, '#fff');
+			linearGrad.addColorStop(0.25, '#fb3');
+			linearGrad.addColorStop(0.5, '#fff');
+			linearGrad.addColorStop(0.75, 'blue');
+			linearGrad.addColorStop(1.0, '#fff');
+			context.fillStyle = linearGrad;
+			context.fillRect(0,0,800,600);
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

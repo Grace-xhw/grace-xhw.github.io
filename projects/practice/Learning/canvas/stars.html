@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>stars in sky</title>
+</head>
+<body>
+	<div>
+		<canvas id="starCanvas" style="display:block; margin:10px auto; border:1px solid #aaa;"></canvas>
+	</div>
+
+	<script type="text/javascript">
+		window.onload = function () {
+			var can = document.getElementById('starCanvas');
+			var ctx = can.getContext('2d');
+
+			can.width = 800;
+			can.height = 600; 
+
+			// ctx.fillStyle = "black";
+			var skyStyle = ctx.createLinearGradient(0,0,0, can.height);
+			skyStyle.addColorStop(0.0,'black');
+			skyStyle.addColorStop(1.0,'#035');
+			ctx.fillStyle = skyStyle;
+			ctx.fillRect(0,0,can.width,can.height);
+
+			for( var i = 0; i < 200; i++){
+				var r = Math.random() * 5 + 5; // r设为5~10之间的随机数
+				var x = Math.random() * can.width; //偏移量
+				var y = Math.random() * can.height * 0.65;
+				var a = Math.random() * 360; //旋转角
+				drawStar(ctx, r, r/2.0, x, y, a);
+			}
+			// drawStar(ctx, 120, 60, 400,400, 30);
+		}
+
+		// 绘制五角星
+		function drawStar( ctx, r, R, x, y, rotate){
+			ctx.beginPath();
+			for( var i = 0; i < 5; i++ ){
+				ctx.lineTo(Math.cos((18 + i*72 - rotate)/180 * Math.PI) * R + x,
+				           -Math.sin((18 + i*72 - rotate)/180 * Math.PI) * R + y);
+				ctx.lineTo(Math.cos((54 + i*72 - rotate)/180 * Math.PI) * r + x,
+				           -Math.sin((54 + i*72 - rotate)/180 * Math.PI) * r + y);
+			}
+			ctx.closePath();
+			ctx.fillStyle = "#fff";
+			ctx.strokeStyle = "#fd5";
+			ctx.lineWidth = 2;
+			// ctx.lineJoin = "meter";
+			ctx.lineJoin = "round";
+			// ctx.lineJoin = "bevel";
+			ctx.fill();
+			ctx.stroke();
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

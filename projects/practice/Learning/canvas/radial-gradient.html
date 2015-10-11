@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>radial-gradient</title>
+</head>
+<body>
+	<div>
+		<canvas id="radialCanvas" style="display:block; margin:50px auto; border:1px solid #aaa;"></canvas>
+	</div>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var rcanvas = document.getElementById('radialCanvas');
+			var rcontext = rcanvas.getContext('2d');
+
+			rcanvas.width = 600;
+			rcanvas.height = 600;
+
+			//径向渐变填充,传入6个参数（x0,y0,r0,x1,y1,r1）; 前三个参数指圆心，后三个参数指大圆
+			var radialgrd = rcontext.createRadialGradient(300,300,0, 300,300,150);
+			radialgrd.addColorStop(0.0, '#fff');
+			radialgrd.addColorStop(0.25, '#fb3');
+			radialgrd.addColorStop(0.50, '#fff');
+			radialgrd.addColorStop(0.75, 'blue');
+			radialgrd.addColorStop(1.0, '#fff');
+			rcontext.fillStyle = radialgrd;
+			rcontext.fillRect(0,0,600,600);
+		}
+	</script>
+</body>
+</html>
+
+

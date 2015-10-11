@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pattern</title>
+</head>
+<body>
+	<div>
+		<canvas id="canvas" style="display:block; margin:50px auto; border:1px solid #aaa;"></canvas>
+	</div>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var canvas = document.getElementById('canvas');
+			var context = canvas.getContext('2d');
+
+			canvas.width = 600;
+			canvas.height = 600;
+
+			var backCanvas = createBackgroundCanvas();
+			var pattern = context.createPattern(backCanvas, 'repeat');
+			// 注：pattern包括以下三种：createPattern(img,repeat-style);
+									// createPattern(canvas,repeat-style);
+									// createPattern(vedio,repeat-style;)
+			context.fillStyle = pattern;
+			context.fillRect(0,0,600,600);
+		}
+
+		// 创建背景画布
+		function createBackgroundCanvas(){
+			var backCanvas = document.createElement('canvas');
+			var backCanvasContext = backCanvas.getContext('2d');
+
+			backCanvas.width = 100;
+			backCanvas.height = 100;
+
+			drawStar(backCanvasContext, 50, 25, 50, 50,35);
+			return backCanvas;
+		}
+
+		// 五角星函数
+		function drawStar( ctx, r, R, x, y, rotate){
+			ctx.beginPath();
+			for( var i = 0; i < 5; i++ ){
+				ctx.lineTo(Math.cos((18 + i*72 - rotate)/180 * Math.PI) * R + x,
+				           -Math.sin((18 + i*72 - rotate)/180 * Math.PI) * R + y);
+				ctx.lineTo(Math.cos((54 + i*72 - rotate)/180 * Math.PI) * r + x,
+				           -Math.sin((54 + i*72 - rotate)/180 * Math.PI) * r + y);
+			}
+			ctx.closePath();
+			ctx.fillStyle = "#fb3";
+			ctx.strokeStyle = "#fd5";
+			ctx.lineWidth = 2;
+			ctx.lineJoin = "round";
+			ctx.fill();
+			ctx.stroke();
+		}
+
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

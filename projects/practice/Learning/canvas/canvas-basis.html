@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas基本图形</title>
+</head>
+<body>
+	<div>
+		<canvas id="canvas" style="display:block; border:1px solid #aaa; margin:0 auto;"></canvas>
+	</div>
+
+	<script type="text/javascript">
+		window.onload = function () {
+			var canvas = document.getElementById('canvas');
+			var context = canvas.getContext('2d');
+
+			canvas.width = 600;
+			canvas.height = 800;
+
+
+			// 绘制线条1，确定一个新路径
+			context.beginPath(); 
+			// 线条初始的位置
+			context.moveTo(100,20);
+			// 线条结束的位置
+			context.lineTo(500,20);
+			// 设定线条样式
+			context.lineWidth = 10;
+			context.strokeStyle = "#131CC2";
+			context.lineCap = "round";
+			// 将线条绘制在画布上
+			context.stroke();
+
+
+			// 绘制线条2
+			context.beginPath();
+			context.moveTo(100,50);
+			context.lineTo(500,50);
+			context.lineWidth = 10;
+			context.strokeStyle = "#7B34C8";
+			context.lineCap = "square";
+			context.stroke();
+
+			// 绘制线条3
+			context.beginPath();
+			context.moveTo(100,80);
+			context.lineTo(500,80);
+			context.lineWidth = 10;
+			context.strokeStyle = "#71E4E8";
+			context.lineCap = "butt";
+			context.stroke();
+
+
+			// 绘制矩形
+			context.beginPath();
+			context.fillStyle = "blue";
+			context.fillRect(100, 150, 100,100);
+			// 清除矩形的四分之一
+			context.clearRect(100, 150, 50,50);
+			// 给矩形添加边框
+			context.strokeRect(100, 150, 100, 100);
+			context.closePath();
+			// beginPath()与closePath()结合使用
+
+
+			// 绘制圆
+			context.beginPath();
+			// context.globalAlpha = 0.3; 用于改变透明度
+			context.fillStyle = "#F525D3";
+			context.arc(300, 200, 50, 0, 2 * Math.PI,false);
+			// 将圆绘制在画布上
+			context.fill();
+
+			// 绘制半圆
+			context.beginPath();
+			context.fillStyle = "orange";
+			context.arc(450, 200, 50, 0, 0 + Math.PI, false);
+			context.fill();
+
+			// 绘制弧线
+			context.beginPath();
+			context.arc(450, 200, 50, 1.1*Math.PI, 1.9*Math.PI, false);
+			context.lineWidth = 5;
+			context.strokeStyle = "#5C9614";
+			context.stroke();
+
+			// 绘制二次方曲线
+			context.beginPath();
+			context.moveTo(100, 350);
+			// 传入控制点和结束点坐标
+			context.quadraticCurveTo(200, 230, 280, 400);
+			context.lineWidth = 5;
+			context.strokeStyle = "#0AF731";
+			context.lineCap = "round";
+			context.stroke();
+
+
+			// 绘制贝塞尔曲线
+			context.beginPath();
+			context.moveTo(300, 450);
+			// 传入控制点1、控制点2、终点的坐标
+			context.bezierCurveTo(350, 250, 450, 250, 430, 280);
+			context.lineWidth = 5;
+			context.strokeStyle = "#3FD03B";
+			context.stroke();
+
+
+			// 绘制折线
+			context.beginPath();
+			context.moveTo(100, 400);
+			context.lineTo(200, 500);
+			context.lineTo(100, 500);
+			context.lineWidth = 15;
+			context.strokeStyle = "blue";
+			context.lineJoin = "bevel";
+			// context.lineJoin = "round";
+			// context.lineJoin = "meter";
+			context.stroke();
+
+
+			// 文字渲染 
+			context.beginPath();
+			context.font = "bold 40px Arial";
+			context.fillStyle = 'orange';
+			context.fillText('canvas基础知识学习', 100, 550);
+
+			// 带边框文字
+			context.lineWidth = 1;
+			context.strokeStyle = "#058;"
+			context.strokeText('canvas基础知识学习', 100, 600);
+
+
+
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
