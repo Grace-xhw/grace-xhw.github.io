@@ -1,0 +1,167 @@
+@import "mixin";
+
+$toolbar-size:52px;
+
+.toolbar{
+	position: fixed;
+	left: 50%;
+	bottom: 20px;
+}
+
+.toolbar-item{
+	position: relative;
+	display: block;
+	width: $toolbar-size;
+	height: $toolbar-size;
+	margin-top: 1px;
+
+	&:hover{
+		.toolbar-btn{
+			&:before{
+				top:-$toolbar-size;
+			}
+			&:after{
+				top:0;
+			}
+		}
+
+		&:after{
+			@include opacity(1);
+			@include scale(1);
+		}
+	}
+
+	&:after{
+		content: "";
+		position: absolute;
+		right: $toolbar-size;
+		bottom: 0;
+		width: 172px;
+		background: url(.././images/toolbar.png) no-repeat;
+		@include opacity(0);
+		@include transform-origin(right bottom);
+		@include scale(0);
+		@include transition(all .6s);
+	}
+}
+
+.toolbar-item-weixin{
+	&:after{
+		content: "";
+		height: 212px;
+		background-position: 0 0;
+	}
+	.toolbar-btn{
+		&:before{
+			content: "\e600";
+		}
+		&:after{
+			content: "公众\A账号";
+		}
+	}
+}
+
+.toolbar-item-feedback{
+	.toolbar-btn{
+		&:before{
+			content: "\e602";
+		}
+		&:after{
+			content: "意见\A反馈";
+		}
+	}
+}
+
+.toolbar-item-app{
+	&:after{
+		content: "";
+		height: 194px;
+		background-position: 0 -222px;
+	}
+	.toolbar-btn{
+		&:before{
+			content: "\e601";
+		}
+		&:after{
+			content: "App\A下载";
+		}
+	}
+}
+
+.toolbar-item-top{
+	.toolbar-btn{
+		&:before{
+			content: "\e604";
+		}
+		&:after{
+			content: "返回\A顶部";
+		}
+	}
+}
+
+.toolbar-btn{
+
+	&,&:before,&:after{
+		position: absolute;
+		top: 0;
+		width: $toolbar-size;
+		height: $toolbar-size;
+	}
+
+	&:before,&:after{
+		content: "";
+		color: #fff;
+		text-align: center;
+		padding-top: 12px;
+		@include transition(top 1s);
+	}
+
+	left: 0;
+	overflow: hidden;
+
+   // 从font.css里面复制出来
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&:before{
+		// icon 
+		top:0;
+		background: #d0d6d9;
+		font-size: 30px;
+	}
+	&:after{
+		//text 
+		top: $toolbar-size;
+		background: #98a1a6;
+		font-size: 12px;
+		line-height: 1.2;
+		white-space: pre;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
