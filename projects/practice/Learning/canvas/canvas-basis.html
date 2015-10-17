@@ -15,7 +15,7 @@
 			var context = canvas.getContext('2d');
 
 			canvas.width = 600;
-			canvas.height = 800;
+			canvas.height = 1200;
 
 
 			// 绘制线条1，确定一个新路径
@@ -95,7 +95,7 @@
 			context.stroke();
 
 
-			// 绘制贝塞尔曲线
+			// 绘制贝塞尔三次曲线
 			context.beginPath();
 			context.moveTo(300, 450);
 			// 传入控制点1、控制点2、终点的坐标
@@ -125,12 +125,63 @@
 			context.fillText('canvas基础知识学习', 100, 550);
 
 			// 带边框文字
+			context.font = "italic bold 40px sans-serif";
 			context.lineWidth = 1;
-			context.strokeStyle = "#058;"
-			context.strokeText('canvas基础知识学习', 100, 600);
+			context.strokeStyle = "#058";
+			context.strokeText('canvas基础知识学习', 100, 600, 300);
 
 
+			// 渐变文字并带边框
+			var linearGrad = context.createLinearGradient(0,0,800,0); 
+			linearGrad.addColorStop(0.0, 'red');
+			linearGrad.addColorStop(0.25, 'orange');
+			linearGrad.addColorStop(0.5, 'yellow');
+			linearGrad.addColorStop(0.75, 'green');
+			linearGrad.addColorStop(1.0, 'purple');
+			context.font = "oblique bold 40px Arial";
+			// context.textAlign = 'left'; 
+			context.fillStyle = linearGrad;
+			context.fillText('canvas基础知识学习', 100, 650,200);
 
+			// 填充并带边框
+			context.strokeText('canvas基础知识学习', 100, 700);
+			context.fillText('canvas基础知识学习', 100,700);
+
+			// 测量字符串长度
+			var textWidth = context.measureText('测量字符串长度').width;
+			context.fillText('以上字符串宽度为' + textWidth + "px", 100, 750);
+
+			// 绘制阴影
+			context.fillStyle = '#058';
+			context.shadowColor = 'gray';
+			context.shadowOffsetX = 10; //阴影相对于原图形的偏移量
+			context.shadowOffsetY = 10;
+			context.shadowBlur = 5;
+			context.fillRect(100, 790, 100, 100);
+
+			// 利用globalCompositeOperation来调整覆盖顺序,其他11个值，参考img截图
+			context.beginPath();
+			context.globalCompositeOperation = "source-over";
+			// context.globalCompositeOperation = "destination-over";
+			context.fillStyle = "green";
+			context.fillRect(150, 810, 100, 100);
+			context.fill();
+
+			// 利用非零环绕原则绘制
+			context.beginPath();
+			context.arc(400, 870, 50, 0, Math.PI*2, false);
+			context.arc(400, 870, 100, 0, Math.PI, true);
+			context.closePath();
+			context.fillStyle = "orange";
+			context.fill();
+
+			// 利用非零环绕原则绘制圆环
+			context.beginPath();
+			context.arc(400, 1050, 50, 0, Math.PI*2, false);
+			context.arc(400, 1050, 100, 0, Math.PI*2, true);
+			context.closePath();
+			context.fillStyle = "orange";
+			context.fill();
 		}
 	</script>
 </body>
