@@ -16,7 +16,7 @@
 
 - HTML(5)
 - CSS(3)
-- Boostrap
+- Bootstrap
 - Sass
 - Less
 - Javascript
