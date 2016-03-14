@@ -29,20 +29,20 @@ window.onload = function () {
     function getTotal(){
         var selected = 0;
         var price = 0;
-        var HTMLstr='';
+        // var HTMLstr='';
         for (var i = 0; i < tr.length; i++){
             if (tr[i].getElementsByTagName('input')[0].checked) {
                 tr[i].className = 'on';
                 selected += parseInt(tr[i].getElementsByTagName('input')[1].value);
                 price += parseFloat(tr[i].cells[4].innerHTML);
-                HTMLstr += '<div><img src="'+ tr[i].getElementsByTagName('img')[0].src+'"><span class="del" index="'+i+'">取消选择</span></div>';
+                // HTMLstr += '<div><img src="'+ tr[i].getElementsByTagName('img')[0].src+'"><span class="del" index="'+i+'">取消选择</span></div>';
             }else{
                 tr[i].className = '';
             };
         }
         selectedTotal.innerHTML = selected;
         priceTotal.innerHTML = price.toFixed(2);
-        selectedViewList.innerHTML = HTMLstr;
+        // selectedViewList.innerHTML = HTMLstr;
 
         if (selected == 0) {
             foot.className = 'foot';
@@ -75,33 +75,32 @@ window.onload = function () {
         }
     }
 
-    selected.onclick = function(){
-        if (foot.className == 'foot') {
-            if (selectedTotal.innerHTML != 0) {
-                foot.className = 'foot show';
-            };  
-        }else{
-            foot.className = 'foot';
-        };
-    }
+    // selected.onclick = function(){
+    //     if (foot.className == 'foot') {
+    //         if (selectedTotal.innerHTML != 0) {
+    //             foot.className = 'foot show';
+    //         };  
+    //     }else{
+    //         foot.className = 'foot';
+    //     };
+    // }
 
-    selectedViewList.onclick = function(e){
-        //以下判断，兼容IE
-        e = e || window.event;
-        var el = e.srcElement;
-        if (el.className == 'del') {
-            var index = el.getAttribute('index');
-            var input = tr[index].getElementsByTagName('input')[0];
-            input.checked = false;
-            input.onclick();
-        };
-    }
+    // selectedViewList.onclick = function(e){
+    //     e = e || window.event;
+    //     var el = e.srcElement || target;
+    //     if (el.className == 'del') {
+    //         var index = el.getAttribute('index');
+    //         var input = tr[index].getElementsByTagName('input')[0];
+    //         input.checked = false;
+    //         input.onclick();
+    //     };
+    // }
 
     //事件代理
     for(var i = 0; i < tr.length; i++){
         tr[i].onclick = function(e){
             e = e || window.event;
-            var el = e.srcElement;
+            var el = e.srcElement || target;
             var cls = el.className;
             var input = this.getElementsByTagName('input')[1];
             var val = parseInt(input.value);

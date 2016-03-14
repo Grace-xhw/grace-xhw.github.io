@@ -1,0 +1,345 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 100px;
+}
+html,body{
+  height: 100%;
+  border: none;
+  overflow: hidden;
+}
+#music{
+  position: fixed;
+  top: 3%;
+  right: 4%;
+  width: 15%;
+  z-index: 99;
+  padding-top: 15%;
+  background: #fff;
+  border: 0.03rem solid #ef1639;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+#desc{
+  position: absolute;
+  width: 79%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+#music img:last-of-type{
+  width: 30%;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 22%;
+}
+.p1_lantern,
+.p1_lantern:after,
+.p1_lantern p,
+.p1_imooc,
+.p1_words,
+.p3_logo,
+.p3_title,
+.p3_blessing,
+.page,
+.p2_circle,
+.p2_circle:before,
+.p2_circle:after,
+.p2_2016
+{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.wrapper{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.page{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+.page1{
+  background: url(./images/p1_bg.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+.page2{
+  background: url(./images/p2_bg.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  z-index: 2;
+  display: none;
+}
+.page3{
+  background: url(./images/p3_bg.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  z-index: 4;
+  display: none;
+}
+.p2_bg_loading{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #ef1639;
+  z-index: 3;
+}
+.p1_lantern{
+  width: 45%;
+  height: 58%;
+  top: -3.5%;
+  text-align: center;
+  color: #fff;
+  padding-top: 30%;
+  background: url(./images/p1_lantern.png) no-repeat center center;
+  background-size: 100%;
+  z-index: 1;
+}
+.p1_lantern:after{
+  top: 37%;
+  content: '';
+  width: 66%;
+  padding-top: 66%;
+  background: #d60b3b;
+  z-index: 2;
+  box-shadow: 0 0 0.15rem 0.15rem #d60b3b;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-animation: lanternShine .5s infinite alternate;
+      -moz-nimation: lanternShine .5s infinite alternate;
+          animation: lanternShine .5s infinite alternate;
+}
+.p1_lantern p{
+  position: absolute;
+  top: 41%;
+  font-size: 0.16rem;
+  z-index: 3;
+}
+.p1_imooc{
+  width: 0.88rem;
+  height: 1.06rem;
+  bottom: 0.4rem;
+  background: url(./images/p1_imooc.png) no-repeat center center;
+  background-size: 100%;
+}
+.p1_words{
+  bottom: 0.3rem;
+  color: #000;
+  font-size: 0.12rem;
+  text-align: center;
+}
+.p2_circle{
+  width: 1.9rem;
+  height: 1.84rem;
+  top: 0;
+  bottom: 0;
+  background: url(./images/p2_circle_outer.png) no-repeat center center;
+  background-size: 100%;
+  -webkit-animation: outerSpin 1.5s linear 4s infinite;
+      -moz-nimation: outerSpin 1.5s linear 4s infinite;
+          animation: outerSpin 1.5s linear 4s infinite;
+}
+.p2_circle:before{
+  content: '';
+  width: 76%;
+  top: 0;
+  bottom: 0;
+  background: url(./images/p2_circle_middle.png) no-repeat center center;
+  background-size: 100%;
+  -webkit-animation: middleSpin 1s linear 3s infinite;
+      -moz-nimation: middleSpin 1s linear 3s infinite;
+          animation: middleSpin 1s linear 3s infinite;
+}
+.p2_circle:after{
+  content: '';
+  width: 60%;
+  top: 0;
+  bottom: 0;
+  background: url(./images/p2_circle_inner.png) no-repeat center center;
+  background-size: 100%;
+  -webkit-animation: innerSpin 1s linear 2s infinite;
+      -moz-nimation: innerSpin 1s linear 2s infinite;
+          animation: innerSpin 1s linear 2s infinite;
+}
+.p2_2016{
+  width: 0.88rem;
+  top: 0;
+  bottom: 0;
+  background: url(./images/p2_2016.png) no-repeat center center;
+  background-size: 100%;
+}
+.p3_logo{
+  width: 1.11rem;
+  height: 0.36rem;
+  top: 8%;
+  background: url(./images/p3_logo.png) no-repeat center center;
+  background-size: 100%;
+}
+.p3_title{
+  width: 1.54rem;
+  height: 2.71rem;
+  top: 22%;
+  background: url(./images/p3_title.png) no-repeat center center;
+  background-size: 100%;
+}
+.p3_couplet{
+  width: 0.7rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 24%;
+}
+.left{
+  left: 4%;
+  background: url(./images/p3_couplet_second.png) no-repeat center center;
+  background-size: 100%;
+}
+.right{
+  right: 4%;
+  background: url(./images/p3_couplet_first.png) no-repeat center center;
+  background-size: 100%;
+}
+.p3_blessing{
+  width: 1rem;
+  height: 1rem;
+  bottom: 0.5rem;
+  background: url(./images/p3_blessing.png) no-repeat center center;
+  background-size: 100%;
+  -webkit-animation: middleSpin 4s linear infinite;
+      -moz-nimation: middleSpin 4s linear infinite;
+          animation: middleSpin 4s linear infinite;
+}
+.play{
+  -webkit-animation: middleSpin 8s linear infinite;
+      -moz-nimation: middleSpin 8s linear infinite;
+          animation: middleSpin 8s linear infinite;
+}
+.p2_bg_loading{
+  display: none;
+  z-index: 3;
+  background: #ef1639;
+  -webkit-animation: bgTransition 2s ease-in-out;
+      -moz-nimation: bgTransition 2s ease-in-out;
+          animation: bgTransition 2s ease-in-out;
+}
+.slideUp{
+  display: block;
+  -webkit-animation: slideUp 1s linear;
+      -moz-nimation: slideUp 1s linear;
+          animation: slideUp 1s linear;
+}
+
+/* animations */
+@keyframes lanternShine{
+  0%{
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+            transform: scale(1);
+
+  }
+  100%{
+    -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@keyframes innerSpin{
+  0%{
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+            transform: rotate(0deg);
+
+  }
+  100%{
+    -webkit-transform: rotate(-1080deg);
+       -moz-transform: rotate(-1080deg);
+            transform: rotate(-1080deg);
+  }
+}
+@keyframes middleSpin{
+  0%{
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+            transform: rotate(0deg);
+
+  }
+  100%{
+    -webkit-transform: rotate(720deg);
+       -moz-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+@keyframes outerSpin{
+  0%{
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+            transform: rotate(0deg);
+
+  }
+  100%{
+    -webkit-transform: rotate(-360deg);
+       -moz-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@keyframes bgTransition{
+  0%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes slideUp{
+  0%{
+    top: 200%;
+  }
+  100%{
+    top: 0;
+  }
+}
+
+/* responsive css*/
+@media only screen and (max-width: 320px) and (max-height: 480px){
+  .p1_lantern:after {
+      top: 35%;
+  }
+  .p3_blessing {
+      bottom: 0.1rem;
+  }
+  .p3_title{
+    top: 20%;
+  }
+}
+
+@media only screen and (min-width: 412px) and (min-height: 736px){
+  .p1_lantern p {
+      font-size: 0.22rem;
+  }
+  .p1_imooc {
+      bottom: 0.6rem;
+  }
+  .p1_words {
+      bottom: 0.4rem;
+      font-size: 0.16rem;
+  }
+  .p3_blessing {
+      width: 1.1rem;
+      height: 1.1rem;
+      bottom: 0.7rem;
+  }
+}

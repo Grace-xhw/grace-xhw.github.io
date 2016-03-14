@@ -7,7 +7,8 @@
 	<meta http-equiv="X-UA-compatible" content="IE-edge,chrome=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/flexslider.css" /> 
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> 
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/slimScroll.js"></script>
 	<script type="text/javascript" src="js/jquery.flexslider.js"></script> 
 	<script type="text/javascript" src="js/main-slider.js"></script>
 </head>
@@ -461,5 +462,15 @@
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		$('.main_works').slimScroll({
+			color: '#00f',
+			size: '10px',
+			height: '180px',
+			position: 'right',
+			alwaysVisible: true
+		})
+	</script>
 </body>
 </html>
